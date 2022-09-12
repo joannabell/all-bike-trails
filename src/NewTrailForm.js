@@ -6,6 +6,7 @@ function NewTrailForm( setTrails, trails ) {
         name: "",
         state: "",
         lengthMiles: 0,
+        difficulty: "easy",
         isHilly: false,
         description: "",
         features: "",
@@ -14,14 +15,16 @@ function NewTrailForm( setTrails, trails ) {
         comments: ""
     })
   
-    function handleChange(e) {   //needs a conditional to handle the checkbox and select
-        // const name = e.target.name
-        // let value = e.target.value
+    function handleChange(e) {
+        const name = e.target.name
+        let value = e.target.value
 
-        // setFormData(...formData, [name]: value)
+        if(e.target.type === "checkbox"){value = e.target.checked}
+
+        setFormData({...formData, [name]: value})
     }
 
-    function handleSubmit(e){
+    function handleSubmit(e) {
         e.preventDefault()
         fetch("http://localhost:3000/bikeTrails", {
             method: "POST",
@@ -32,7 +35,7 @@ function NewTrailForm( setTrails, trails ) {
             body: JSON.stringify(formData)
         })
         .then(res => res.json())
-        .then(newTrail => setTrails([...trails, newTrail])
+        .then(newTrail => setTrails([...trails, newTrail]))
     }
 
     return ( //uses label and h3 tags, we will see which is better
@@ -41,6 +44,7 @@ function NewTrailForm( setTrails, trails ) {
             <label for="name">Name of Trail:</label> 
             <input
                 onChange={handleChange}
+                value={formData.name}
                 type="text"
                 name="name"
                 id="name"
@@ -49,7 +53,7 @@ function NewTrailForm( setTrails, trails ) {
             />
             <br />
             <h3>State:</h3>
-            <select name="states">
+            <select value={formData.state} onChange={handleChange} name="states">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="As">Arizona</option>
@@ -103,6 +107,8 @@ function NewTrailForm( setTrails, trails ) {
             <br />
             <h3>Miles:</h3>
             <input
+                onChange={handleChange}
+                value={formData.miles}
                 type="number"
                 name="miles"
                 placeholder="Miles..."
@@ -110,7 +116,7 @@ function NewTrailForm( setTrails, trails ) {
             />
             <br />
             <h3>Difficulty:</h3>
-            <select name="difficulty">
+            <select value={formData.difficulty} onChange={handleChange} name="difficulty">
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
@@ -118,14 +124,17 @@ function NewTrailForm( setTrails, trails ) {
             <br />
             <h3>Is the trail hilly?</h3>
             <input
+                onChange={handleChange}
+                value={formData.isHilly}
                 type="checkbox"
                 name="isHilly"
                 className="input-check"
-                value=""
             />
             <br />
             <h3>Description:</h3>
             <input
+                onChange={handleChange}
+                value={formData.description}
                 type="text"
                 name="description"
                 placeholder="Enter trail description..."
@@ -134,6 +143,8 @@ function NewTrailForm( setTrails, trails ) {
             <br />
             <h3>Features:</h3>
             <input
+                onChange={handleChange}
+                value={formData.features}
                 type="text"
                 name="features"
                 placeholder="Enter trail features..."
@@ -142,6 +153,8 @@ function NewTrailForm( setTrails, trails ) {
             <br />
             <h3>Map PDF Link:</h3>
             <input
+                onChange={handleChange}
+                value={formData.mapPDF}
                 type="text"
                 name="mapPDF"
                 placeholder="Enter a .pdf map..."
@@ -150,6 +163,8 @@ function NewTrailForm( setTrails, trails ) {
             <br />
             <h3>Picture of Trail:</h3>
             <input
+                onChange={handleChange}
+                value={formData.image}
                 type="text"
                 name="iamge"
                 placeholder="Enter trail image..."

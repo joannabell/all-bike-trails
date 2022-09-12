@@ -1,8 +1,9 @@
 {
-    "rhodeIslandTrails": [
+    "bikeTrails": [
       {
         "id": 1,
         "name": "East Bay Bike Path",
+        "state": "RI",
         "lengthMiles": 14.5,
         "difficulty": "medium",
         "isHilly": true,
@@ -15,6 +16,7 @@
       {
         "id": 2,
         "name": "Blackstone River Bikeway",
+        "state": "RI",
         "lengthMiles": 18.2,
         "difficulty": "medium",
         "isHilly": false,
@@ -27,6 +29,7 @@
       {
         "id": 3,
         "name": "Fred Lippitt Woonasquatucket River Greenway",
+        "state": "RI",
         "lengthMiles": 5.0,
         "difficulty": "easy",
         "isHilly": false,
@@ -39,6 +42,7 @@
       {
         "id": 4,
         "name": "Quonset/Davisville Bike Path",
+        "state": "RI",
         "lengthMiles": 3.7,
         "difficulty": "easy",
         "isHilly": false,
@@ -51,6 +55,7 @@
       {
         "id": 5,
         "name": "South County Bike Path",
+        "state": "RI",
         "lengthMiles": 7.8,
         "difficulty": "medium",
         "isHilly": false,
@@ -63,6 +68,7 @@
       {
         "id": 6,
         "name": "Ten Mile River Greenway",
+        "state": "RI",
         "lengthMiles": 3.0,
         "difficulty": "easy",
         "isHilly": false,
@@ -75,6 +81,7 @@
       {
         "id": 7,
         "name": "Warren Bike Path",
+        "state": "RI",
         "lengthMiles": 1.0,
         "difficulty": "easy",
         "isHilly": false,
@@ -87,6 +94,7 @@
       {
         "id": 8,
         "name": "Washington Secondary Bike Path",
+        "state": "RI",
         "lengthMiles": 19.0,
         "difficulty": "hard",
         "isHilly": false,

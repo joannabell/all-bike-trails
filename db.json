@@ -1,0 +1,92 @@
+{
+    "califonriaTrails": [
+      {
+        "id": 1,
+        "name": "East Bay Bike Path",
+        "lengthMiles": 14.5,
+        "difficulty": "medium",
+        "isHilly": true,
+        "description": "The East Bay Bike Path is the first multi-town bike path we built in Rhode Island. It travels 14.5 miles from India Point Park in Providence to Independence Park in Bristol, passing many state and local parks and recreation areas. Connecting neighborhoods, schools and business districts, the path is popular with commuting cyclists heading into Providence.",
+        "features": "The path follows the former Providence and Bristol Railroad and is mostly flat, with the exception of a large hill as the path switches from an alignment alongside Veterans Memorial Parkway in East Providence to the former rail right-of-way.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/East_Bay_and_Warren_Bike_Path.pdf",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/East_Bay_Bike_Path%2C_Bristol%2C_RI.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Blackstone River Bikeway",
+        "lengthMiles": 18.2,
+        "difficulty": "medium",
+        "isHilly": false,
+        "description": "The Blackstone River Bikeway is the state's second-longest bike path, with 18.2 miles of bikeway - which includes 11.6 miles of path between Cumberland and Woonsocket and segments of on and off-road bikeway heading south to India Point Park in Providence and north to the Massachusetts border.",
+        "features": "The path follows the Blackstone River wherever possible, including on the tow paths of the historic Blackstone Canal. This highly scenic bikeway crosses the river many times, offering views of waterfalls, marshes and wildlife. Many old mills line the river too, evidence of the impact of the Industrial Revolution that earned the Blackstone the title of the 'hardest-working river in America.'",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Blackstone_River_Bikeway.pdf",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackstone_River_State_Park_sign.jpg/1280px-Blackstone_River_State_Park_sign.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Fred Lippitt Woonasquatucket River Greenway",
+        "lengthMiles": 5.0,
+        "difficulty": "easy",
+        "isHilly": false,
+        "description": "The Woonasquatucket River Greenway provides a vital link for biking to work or school for residents in Providence and Johnston. Through a series of on-road routes and off-road paths, you can ride 5 miles from Lyman Avenue in Johnston into the heart of our capital city, linking up directly to the Providence Riverwalk at Providence Place Mall. The on-road segments are recommended for experienced cyclists with busy road crossings.",
+        "features": "The path is one piece of the Woonasquatucket River Greenway Project, created in the early 1990s by Fred Lippitt, then chairman of The Providence Plan, who earlier served as a State Representative. Lippitt championed the cause to spur development of abandoned industrial sites, to support the underserved neighborhoods in the Olneyville area, and highlight the river.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Fred_Lippitt_Woonasquatucket_River_Greenway.pdf",
+        "image": "https://wrwc.org/wp/wp-content/uploads/2018/07/greenway.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Quonset/Davisville Bike Path",
+        "lengthMiles": 3.7,
+        "difficulty": "easy",
+        "isHilly": false,
+        "description": "The Quonset/Davisville Bike in North Kingstown was built by RIDOT and the Quonset Development Corporation. Hugging the edge of the Quonset Business Park, the path extends 3.7 miles from Post Road (Route 1), through the Calf Pasture Point nature area, ending at the Mt. View neighborhood in North Kingstown. It runs along the northern edge of the park, serving as a recreational asset to both workers and nearby residents.",
+        "features": "The path runs from Route 1 (Post Road) through the Quonset Business Park to the Calf Pasture Point nature area, managed by The Town of North Kingstown. The bikeway is entirely off-road.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Quonset_Bike_Path.pdf",
+        "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/rhodeisland/Davisville-Bike-Path-North-Kingstown-South-County-ff3502685056a36_ff350461-5056-a36a-094db7f1adcd1b96.jpg"
+      },      
+      {
+        "id": 5,
+        "name": "South County Bike Path",
+        "lengthMiles": 7.8,
+        "difficulty": "medium",
+        "isHilly": false,
+        "description": "The South County Bike Path, also known as the William C. O'Neill Bike Path, is the state's fourth-longest bike path, stretching 7.8 miles from Kingston Station in the village of West Kingston in South Kingstown to Mumford Road in Narragansett. The path connects to on-road routes for access to the Narragansett shoreline.",
+        "features": "The path is largely built on the former right-of-way of the Narragansett Pier Railroad, which dates back to 1876. After railroad operations ceased in the late 1960s, many ideas were considered for the corridor. The late Senator William C. O'Neill was instrumental in advocating for the railroad's re-use as a bike path to make it safer for children to ride a bike to school.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/William_C_O'Neill_Bike_Path.pdf",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/South_County_Bike_Path%2C_Peace_Dale%2C_RI.JPG/1280px-South_County_Bike_Path%2C_Peace_Dale%2C_RI.JPG"
+      },      
+      {
+        "id": 6,
+        "name": "Ten Mile River Greenway",
+        "lengthMiles": 3.0,
+        "difficulty": "easy",
+        "isHilly": false,
+        "description": "The Ten Mile River Greenway is 3 miles long and connects a number of recreational spaces and athletic fields, including Slater Park, in the northeast corner of Pawtucket. It is one of the few bike paths in Rhode Island that was not built along a former rail corridor. This means the path follows the natural contour of the land and provides a very scenic ride along rolling terrain on the banks of the James Turner Reservoir.",
+        "features": "A scenic ride along rolling terrain on the banks of the James Turner Reservoir. In Slater Park, many other riding opportunities abound, including easy access to the historic 1894 Looff Carousel.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Ten_Mile_River_Greenway.pdf",
+        "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/rhodeisland/140-3-9913_f986532a-7c0f-4b0e-b135-3a05ca294eaf_40398f31-5056-a36a-0953568aec2b9a85.jpg"
+      },      
+      {
+        "id": 7,
+        "name": "Warren Bike Path",
+        "lengthMiles": 1.0,
+        "difficulty": "easy",
+        "isHilly": false,
+        "description": "The Warren Bike Path is one of the shortest bikeways in Rhode Island. The 1-mile path in the eastern portion of town extends from the Kickemuit River to Long Lane, close to the Massachusetts border. The path follows the abandoned Warren-Fall River Railroad spur. The new path provides a major recreational asset to the town, and provides options for biking or walking to school as it links Kickemuit Middle School, Hugh Cole Elementary School and Warren Recreation Park.",
+        "features": "The path is mostly level. On-road options exist for getting to the nearby East Bay Bike Path.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/East_Bay_and_Warren_Bike_Path.pdf",
+        "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_457,q_50,w_810/https://assets.simpleviewinc.com/simpleview/image/upload/crm/rhodeisland/east-warren-bike-path_7AAAA437-5056-A36A-094337663992A115-7aaaa31a5056a36_7aaaa49b-5056-a36a-0936ea141c103f96.jpg"
+      },      
+      {
+        "id": 8,
+        "name": "Washington Secondary Bike Path",
+        "lengthMiles": 19.0,
+        "difficulty": "hard",
+        "isHilly": false,
+        "description": "The Washington Secondary Bike Path is the state's longest bike path at 19 miles from Cranston Street in Cranston to Log Bridge Road, just past Route 102, in western Coventry. It is named for the abandoned rail corridor once served by the Providence, Hartford, & Fishkill Railroad.",
+        "features": "As the path follows the former rail corridor, it is mostly flat but has a gradual downhill slope heading from west to east. The greatest elevation change is on the Trestle Trail segment. For more than half its length, the path runs parallel to the Pawtuxet River. Small boat access is possible at several points with formal canoe launches. The trail also features an equestrian trail now open from Route 117 at Old Main Street to Log Bridge Road. The equestrian path sometimes shares the bikeway, sometimes goes off path both north and south of the bikeway.",
+        "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG"
+      }
+    ]
+  }

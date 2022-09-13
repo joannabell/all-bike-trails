@@ -53,7 +53,7 @@ function NewTrailForm( setTrails, trails ) {
             />
             <br />
             <h3>State:</h3>
-            <select value={formData.state} onChange={handleChange} name="states">
+            <select value={formData.state} onChange={handleChange} name="state">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="As">Arizona</option>
@@ -110,7 +110,7 @@ function NewTrailForm( setTrails, trails ) {
                 onChange={handleChange}
                 value={formData.miles}
                 type="number"
-                name="miles"
+                name="lengthMiles"
                 placeholder="Miles..."
                 className="input-number"
             />

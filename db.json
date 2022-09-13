@@ -105,19 +105,17 @@
       "comments": ""
     },
     {
-      "id": 1663088940364,
-      "name": " Super Fun Bike Trail!",
-      "state": "",
-      "lengthMiles": 0,
+      "id": 1663089603136,
+      "name": "Super Fun Bike Trail",
+      "state": "TN",
+      "lengthMiles": "4",
       "difficulty": "medium",
       "isHilly": true,
       "description": "The best bike trail in the state! So fun!",
-      "features": "Fun bike trail features!",
+      "features": "",
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/BIKEFRONT.pdf",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg/1280px-Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg",
-      "comments": "",
-      "miles": "1.5",
-      "states": "RI"
+      "comments": ""
     }
   ]
 }

@@ -3,13 +3,13 @@ import NavBar from './NavBar'
 import SearchBar from './SearchBar'
 
 
-function Home() {
+function Home({searchValue, handleSearchChange}) {
   return (
 
     <div className="Home">
       <NavBar />
       <div id="searchDiv">
-        <SearchBar />
+        <SearchBar handleSearchChange={handleSearchChange} searchValue={searchValue}/>
       </div>
     </div>
   );

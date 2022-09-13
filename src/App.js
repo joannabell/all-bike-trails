@@ -8,6 +8,7 @@ import Home from "./Home";
 
 function App() {
   const [trails, setTrails] = useState([])
+  const [ searchValue, setSearchValue ] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:3000/bikeTrails")
@@ -15,16 +16,20 @@ function App() {
     .then(bikeTrails => setTrails(bikeTrails))
   }, [])
 
+  function handleSearchChange(event) {
+    setSearchValue(event.target.value)
+  }
+
   return (
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home handleSearchChange={handleSearchChange} searchValue={searchValue}/>
         </Route >
-        <Route exact path="/Search">
-          <Search />
+        <Route exact path="/search">
+          <Search searchValue={searchValue} handleSearchChange={handleSearchChange}/>
         </Route >
-        <Route exact path="/NewTrail">
+        <Route exact path="/new-trail">
           <NewTrail />
         </Route >
       </Switch>

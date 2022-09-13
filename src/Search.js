@@ -1,11 +1,15 @@
 import React from "react";
+import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
 
-function Search () {
+function Search ({searchValue, handleSearchChange}) {
 
     return (
         <div>
-            <SearchBar />
+            <SearchBar searchValue={searchValue} handleSearchChange={handleSearchChange}/>
+            <div>
+                <BikeTrailCard />
+            </div>
         </div>
     )
 }

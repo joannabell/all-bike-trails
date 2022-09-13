@@ -7,16 +7,21 @@ function SearchBar() {
     setSearchValue(event.target.value)
   }
 
+  function handleSubmit(event) {
+    event.preventDefault()
+    console.log("click")
+  }
+
   return (
     <div className="SearchBar">
-      <form className='search-bar'>
+      <form className='search-bar' onSubmit={handleSubmit}>
         <input
         type="text"
         placeholder="Search by state or trail name" 
         value={searchValue}
         onChange={handleSearchChange}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search"/>
       </form>
     </div>
   );

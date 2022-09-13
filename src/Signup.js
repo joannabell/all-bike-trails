@@ -45,19 +45,19 @@ function Signup({handleCloseSignup, showSignup}) {
         </Modal.Header>
         <Modal.Body>
             <Form onSubmit={handleSubmitForm} onChange={handleFormChange}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3">
                     <Form.Control type="text" placeholder="Last name" name="lastName" value={signUpData.lastName} required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="text" placeholder="First name" name="firstName" value={signUpData.firstName} required/>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Form.Control type="email" placeholder="Enter email" name="email" value={signUpData.email}/>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Form.Control type="password" placeholder="Password" name="password" value={signUpData.password} />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Button variant="primary" type="submit" onClick={handleCloseSignup}>
                         Sign up
                     </Button>

@@ -10,13 +10,13 @@ function Login({handleCloseLogin, showLogin}){
         </Modal.Header>
         <Modal.Body>
         <Form >
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Form.Control type="email" placeholder="Enter email" name="email" />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Form.Control type="password" placeholder="Password" name="password" />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-3">
                     <Button variant="primary" type="submit" onClick={handleCloseLogin}>
                         Login
                     </Button>

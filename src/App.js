@@ -5,10 +5,11 @@ import { Route, Switch } from 'react-router-dom';
 import Home from "./Home";
 
 
-
 function App() {
   const [trails, setTrails] = useState([])
   const [ searchValue, setSearchValue ] = useState("")
+  const [ searchQuery, setSearchQuery ] = useState("")
+
 
   useEffect(() => {
     fetch("http://localhost:3000/bikeTrails")
@@ -20,14 +21,27 @@ function App() {
     setSearchValue(event.target.value)
   }
 
+  function updateSearchQuery(newSearch){
+    setSearchQuery(newSearch)
+}
+
   return (
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home handleSearchChange={handleSearchChange} searchValue={searchValue}/>
+          <Home 
+          handleSearchChange={handleSearchChange} 
+          searchValue={searchValue} 
+          updateSearchQuery={updateSearchQuery}
+          />
         </Route >
         <Route exact path="/search">
-          <Search trails={trails} searchValue={searchValue} handleSearchChange={handleSearchChange}/>
+          <Search 
+          searchValue={searchValue} 
+          handleSearchChange={handleSearchChange} 
+          updateSearchQuery={updateSearchQuery} 
+          searchQuery={searchQuery}
+          />
         </Route >
         <Route exact path="/new-trail">
           <NewTrail />

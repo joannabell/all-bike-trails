@@ -103,19 +103,6 @@
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG",
       "comments": ""
-    },
-    {
-      "id": 1663089603136,
-      "name": "Super Fun Bike Trail",
-      "state": "TN",
-      "lengthMiles": "4",
-      "difficulty": "medium",
-      "isHilly": true,
-      "description": "The best bike trail in the state! So fun!",
-      "features": "",
-      "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/BIKEFRONT.pdf",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg/1280px-Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg",
-      "comments": ""
     }
   ]
 }

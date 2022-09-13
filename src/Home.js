@@ -1,9 +1,15 @@
 import React from 'react';
 import NavBar from './NavBar'
 import SearchBar from './SearchBar'
+import BikeTrailCard from './BikeTrailCard';
+import NewTrail from './NewTrail';
 
 
-function Home({searchValue, handleSearchChange, updateSearchQuery}) {
+function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery}) {
+  let exampleTrails = []
+
+  exampleTrails = trails.slice(0, 3)
+  
   return (
 
     <div className="Home">
@@ -11,6 +17,10 @@ function Home({searchValue, handleSearchChange, updateSearchQuery}) {
       <div id="searchDiv">
         <SearchBar handleSearchChange={handleSearchChange} searchValue={searchValue} updateSearchQuery={updateSearchQuery}/>
       </div>
+      <div id="examples">
+        {exampleTrails.map(trail => <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/>)}
+      </div>
+      <p>About Section:</p>
     </div>
   );
 }

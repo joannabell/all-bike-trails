@@ -4,9 +4,9 @@ import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
 
 
-function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSearchQuery}) {
+function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSearchQuery, handleCardClick }) {
 
-    const showTrails = trails.map((trail) => <BikeTrailCard trail={trail}/>)
+    const showTrails = trails.map((trail) => <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/>)
 
     return (
         <div>

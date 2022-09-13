@@ -1,28 +1,14 @@
 import React from 'react';
 
-function BikeTrailCard({ trail }) {
-
-  const { 
-    id,
-    name, 
-    state, 
-    lengthMiles, 
-    difficulty, 
-    isHilly, 
-    description, 
-    features, 
-    mapPDF, 
-    image, 
-    comments 
-  } = trail;
+function BikeTrailCard({ trail, handleCardClick }) {
 
   return (
-    <div className="BikeTrailCard">
-      <h1>{name}</h1>
-      <p>State: {state}</p>
-      <img src={image} style={{width:"200px"}}/>
-      <p>{difficulty}</p><p>{lengthMiles} Miles</p>
-      <p>{description}</p>
+    <div onClick={() => handleCardClick(trail)} className="BikeTrailCard">
+      <h1>{trail.name}</h1>
+      <p>State: {trail.state}</p>
+      <img src={trail.image} style={{width:"200px"}}/>
+      <p>{trail.difficulty}</p><p>{trail.lengthMiles} Miles</p>
+      <p>{trail.description}</p>
     </div>
   );
 }

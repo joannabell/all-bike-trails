@@ -7,9 +7,6 @@ function NavBar() {
       <NavLink exact to="/">
         Home
       </NavLink>
-      <NavLink exact to="/search">
-        Search
-      </NavLink>
       <NavLink exact to="/new-trail">
         Add Trail
       </NavLink>

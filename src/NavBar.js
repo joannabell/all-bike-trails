@@ -31,8 +31,11 @@ function NavBar() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
           </Nav>
-          <Button onClick={handleShowSignup}>Sign up</Button>
-          <Button onClick={handleShowLogin}>Login</Button>
+          <Nav>
+            <Button className="mx-2 btn-secondary btn-sm"onClick={handleShowSignup}>Sign up</Button>
+            <Button className="btn-secondary btn-sm"onClick={handleShowLogin}>Login</Button>
+          </Nav>
+        
         </Container>
       </Navbar>
     </div>

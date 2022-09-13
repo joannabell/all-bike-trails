@@ -37,11 +37,11 @@ function NavBar() {
       </Navbar>
     </div>
     <div className='login-modal'>
-      showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin}/>
+      {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin}/> : ""}
     </div>
 
     <div className='signup-modal'>
-      showSignup ? <Signup showSignup={showSignup} handleCloseSignup={handleCloseSignup}/>
+      {showSignup ? <Signup showSignup={showSignup} handleCloseSignup={handleCloseSignup}/> : ""}
     </div>
     </>
   );

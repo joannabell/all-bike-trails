@@ -5,12 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 import Home from "./Home";
 
 
-
 function App() {
   const [trails, setTrails] = useState([])
   const [ searchValue, setSearchValue ] = useState("")
   const [ searchQuery, setSearchQuery ] = useState("")
-
 
 
   useEffect(() => {

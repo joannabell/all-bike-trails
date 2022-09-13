@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import NavBar from "./NavBar";
 import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
+
 
 function Search ({searchValue, handleSearchChange, searchQuery, updateSearchQuery}) {
 
@@ -13,9 +15,6 @@ function Search ({searchValue, handleSearchChange, searchQuery, updateSearchQuer
             updateSearchQuery={updateSearchQuery}
             />
             <p>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
-            <div>
-                <BikeTrailCard />
-            </div>
         </div>
     )
 }

@@ -171,6 +171,7 @@ function NewTrailForm( setTrails, trails ) {
                 className="input-text"
             />
             <br />
+            <input type="submit"/>
         </form>
     </div>
   );

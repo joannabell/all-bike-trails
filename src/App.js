@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Search from './Search';
 import BikeTrail from './BikeTrail';
 import NewTrail from './NewTrail';
 import { Route, Switch } from 'react-router-dom';
 import Home from "./Home";
 import { useHistory } from 'react-router-dom';
+import SignUp from './Signup';
+
+
 
 
 function App() {
@@ -38,9 +43,9 @@ function App() {
   }
 
   const searchedTrails = trails.filter((trail) => {
-    if(searchQuery.length > 0){
+    
       return trail.name.toLowerCase().includes(searchQuery.toLowerCase())
-    }
+  
   })
 
   return (
@@ -71,6 +76,9 @@ function App() {
         <Route exact path="/bike-trail">
           <BikeTrail trail={currentTrail} />
         </Route >
+        <Route exact path="/sign-up">
+          <SignUp />
+        </Route>
       </Switch>
     </div>
   );

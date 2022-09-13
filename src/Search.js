@@ -9,6 +9,7 @@ function Search ({searchValue, handleSearchChange, searchQuery, updateSearchQuer
 
     return (
         <div>
+            <NavBar />
             <SearchBar 
             searchValue={searchValue} 
             handleSearchChange={handleSearchChange} 

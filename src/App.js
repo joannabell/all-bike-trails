@@ -23,6 +23,7 @@ function App() {
 
   function updateSearchQuery(newSearch){
     setSearchQuery(newSearch)
+    setSearchValue("")
 }
 
   return (

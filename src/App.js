@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from './NavBar';
-import SearchBar from "./SearchBar"
+import Search from './Search';
+import NewTrail from './NewTrail';
+import { Route, Switch } from 'react-router-dom';
+import Home from "./Home";
+
 
 
 function App() {
@@ -14,8 +17,17 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
-      <SearchBar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route >
+        <Route exact path="/Search">
+          <Search />
+        </Route >
+        <Route exact path="/NewTrail">
+          <NewTrail />
+        </Route >
+      </Switch>
     </div>
   );
 }

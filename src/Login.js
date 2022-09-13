@@ -20,9 +20,6 @@ function Login({handleCloseLogin, showLogin}){
                     <Button variant="primary" type="submit" onClick={handleCloseLogin}>
                         Login
                     </Button>
-                    <Button variant="secondary" onClick={handleCloseLogin}>
-                        Cancel
-                    </Button>
                 </Form.Group>
             </Form>
         </Modal.Body>

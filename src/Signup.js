@@ -61,9 +61,6 @@ function Signup({handleCloseSignup, showSignup}) {
                     <Button variant="primary" type="submit" onClick={handleCloseSignup}>
                         Sign up
                     </Button>
-                    <Button variant="secondary" onClick={handleCloseSignup}>
-                        Cancel
-                    </Button>
                 </Form.Group>
             </Form>
         </Modal.Body>

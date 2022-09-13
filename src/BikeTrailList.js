@@ -1,4 +1,5 @@
 import React from 'react';
+import BikeTrailCard from './BikeTrailCard';
 
 function BikeTrailList() {
   return (

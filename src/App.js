@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import NavBar from './NavBar';
+import SearchBar from "./SearchBar"
+
 
 function App() {
   const [trails, setTrails] = useState([])
@@ -11,7 +14,8 @@ function App() {
 
   return (
     <div className="App">
-
+      <NavBar />
+      <SearchBar />
     </div>
   );
 }

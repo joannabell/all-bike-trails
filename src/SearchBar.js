@@ -16,7 +16,7 @@ function SearchBar({searchValue, handleSearchChange, updateSearchQuery}) {
       <form className='search-bar' onSubmit={handleSubmit}>
         <input
         type="text"
-        placeholder="Search by state or trail name" 
+        placeholder="Search by trail name or keyword" 
         value={searchValue}
         onChange={handleSearchChange}
         />

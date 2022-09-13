@@ -1,12 +1,15 @@
 import React from 'react';
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar"
+import { useHistory } from 'react-router-dom';
 
 function BikeTrail({ trail }) {
+  const history = useHistory();
+
   return (
     <div>
       <NavBar />
-      <SearchBar />
+      <button onClick={() => history.goBack()}>Go back</button>
       <div className="BikeTrail">
         <h1>{trail.name}</h1>
         <p>State: {trail.state}</p>

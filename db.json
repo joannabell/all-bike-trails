@@ -105,5 +105,12 @@
       "comments": ""
     }
   ],
-  "users": []
+  "users": [
+    {
+      "firstName": "jordan",
+      "lastName": "jennings",
+      "email": "jordanjennings12@gmail.com",
+      "password": "flatiron"
+    }
+  ]
 }

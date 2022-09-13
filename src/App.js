@@ -14,6 +14,8 @@ import SignUp from './Signup';
 
 function App() {
   const [ trails, setTrails ] = useState([])
+  const [ users, setUsers ] = useState([])
+  const [ currentUser, setCurrentUser ] = useState()
   const [ searchValue, setSearchValue ] = useState("")//updates on search change
   const [ searchQuery, setSearchQuery ] = useState("")//to render on search page between <p> element
   const [ currentTrail, setCurrentTrail ] = useState([])
@@ -27,6 +29,14 @@ function App() {
       setTrails(bikeTrails)
       setCurrentTrail(bikeTrails[0])
     })
+
+    fetch("http://localhost:3000/users")
+    .then(res => res.json())
+    .then(users => {
+      setUsers(users)
+    })
+
+    
   }, [])
 
   function handleSearchChange(event) {
@@ -43,9 +53,9 @@ function App() {
   }
 
   const searchedTrails = trails.filter((trail) => {
-    
+    if(searchQuery.length > 0){
       return trail.name.toLowerCase().includes(searchQuery.toLowerCase())
-  
+    }
   })
 
   return (

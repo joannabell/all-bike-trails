@@ -4,8 +4,9 @@ import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
 
 
-function Search ({searchValue, handleSearchChange, searchQuery, updateSearchQuery}) {
+function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSearchQuery}) {
 
+    const showTrails = trails.map((trail) => <BikeTrailCard trail={trail}/>)
 
     return (
         <div>
@@ -16,6 +17,9 @@ function Search ({searchValue, handleSearchChange, searchQuery, updateSearchQuer
             updateSearchQuery={updateSearchQuery}
             />
             <p>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
+            <div>
+                {showTrails}
+            </div>
         </div>
     )
 }

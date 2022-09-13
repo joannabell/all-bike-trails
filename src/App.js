@@ -7,8 +7,8 @@ import Home from "./Home";
 
 function App() {
   const [trails, setTrails] = useState([])
-  const [ searchValue, setSearchValue ] = useState("")
-  const [ searchQuery, setSearchQuery ] = useState("")
+  const [ searchValue, setSearchValue ] = useState("")//updates on search change
+  const [ searchQuery, setSearchQuery ] = useState("")//to render on search page between <p> element
 
 
   useEffect(() => {
@@ -23,8 +23,15 @@ function App() {
 
   function updateSearchQuery(newSearch){
     setSearchQuery(newSearch)
-    setSearchValue("")
 }
+
+  const searchedTrails = trails.filter((trail) => {
+    const trailName = trail.name.toLowerCase()
+    const searchedValue = searchQuery.toLowerCase()
+    if(searchedValue.length > 0){
+      return trailName.includes(searchedValue)
+    }
+  })
 
   return (
     <div className="App">
@@ -42,6 +49,7 @@ function App() {
           handleSearchChange={handleSearchChange} 
           updateSearchQuery={updateSearchQuery} 
           searchQuery={searchQuery}
+          trails={searchedTrails}
           />
         </Route >
         <Route exact path="/new-trail">

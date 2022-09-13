@@ -1,12 +1,28 @@
 import React from 'react';
 
-function BikeTrailCard({ name, length, description, image }) {
+function BikeTrailCard({ trail }) {
+
+  const { 
+    id,
+    name, 
+    state, 
+    lengthMiles, 
+    difficulty, 
+    isHilly, 
+    description, 
+    features, 
+    mapPDF, 
+    image, 
+    comments 
+  } = trail;
+
   return (
     <div className="BikeTrailCard">
       <h1>{name}</h1>
-      <p>{length} Miles</p>
+      <p>State: {state}</p>
+      <img src={image} style={{width:"200px"}}/>
+      <p>{difficulty}</p><p>{lengthMiles} Miles</p>
       <p>{description}</p>
-      <img src={image} />
     </div>
   );
 }

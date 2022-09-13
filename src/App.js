@@ -27,7 +27,7 @@ function App() {
           <Home handleSearchChange={handleSearchChange} searchValue={searchValue}/>
         </Route >
         <Route exact path="/search">
-          <Search searchValue={searchValue} handleSearchChange={handleSearchChange}/>
+          <Search trails={trails} searchValue={searchValue} handleSearchChange={handleSearchChange}/>
         </Route >
         <Route exact path="/new-trail">
           <NewTrail />

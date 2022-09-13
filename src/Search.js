@@ -1,14 +1,16 @@
 import React from "react";
+import NavBar from "./NavBar";
 import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
 
-function Search ({searchValue, handleSearchChange}) {
+function Search ({ trails, searchValue, handleSearchChange }) {
 
     return (
         <div>
+            <NavBar />
             <SearchBar searchValue={searchValue} handleSearchChange={handleSearchChange}/>
             <div>
-                <BikeTrailCard />
+                {trails.map(trail => <BikeTrailCard name={trail.name} length={trail.lengthMiles} description={trail.description} image={trail.image} />)}
             </div>
         </div>
     )

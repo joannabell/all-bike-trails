@@ -166,7 +166,7 @@ function NewTrailForm( setTrails, trails ) {
                 onChange={handleChange}
                 value={formData.image}
                 type="text"
-                name="iamge"
+                name="image"
                 placeholder="Enter trail image..."
                 className="input-text"
             />

@@ -1,7 +1,10 @@
 import { useState } from "react";
+import Button from "react-bootstrap/Button"
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form'
 
 
-function SignUp() {
+function Signup({handleCloseSignup, showSignup}) {
     const [ signUpData, setSignUpData ] = useState({ 
         firstName: "", 
         lastName: "", 
@@ -26,19 +29,46 @@ function SignUp() {
         })
         .then(res => res.json())
         .then(user => console.log(user))
+
+        setSignUpData({ 
+            firstName: "", 
+            lastName: "", 
+            email: "", 
+            password: "" 
+        })
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmitForm} onChange={handleFormChange}>
-                <input type="text" placeholder="First name" name="firstName" value={signUpData.firstName} required/>
-                <input type="text" placeholder="Last name" name="lastName" value={signUpData.lastName} required/>
-                <input type="text" placeholder="Email" name="email" value={signUpData.email} required/>
-                <input type="text" placeholder="Password" name="password" value={signUpData.password} required/>
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+        <Modal show={showSignup} onHide={handleCloseSignup}>
+        <Modal.Header closeButton>
+          <Modal.Title>Sign up!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <Form onSubmit={handleSubmitForm} onChange={handleFormChange}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="text" placeholder="Last name" name="lastName" value={signUpData.lastName} required/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Control type="text" placeholder="First name" name="firstName" value={signUpData.firstName} required/>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Control type="email" placeholder="Enter email" name="email" value={signUpData.email}/>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Control type="password" placeholder="Password" name="password" value={signUpData.password} />
+                </Form.Group>
+                <Form.Group>
+                    <Button variant="primary" type="submit" onClick={handleCloseSignup}>
+                        Sign up
+                    </Button>
+                    <Button variant="secondary" onClick={handleCloseSignup}>
+                        Cancel
+                    </Button>
+                </Form.Group>
+            </Form>
+        </Modal.Body>
+      </Modal>
     )
 }
 
-export default SignUp;
+export default Signup;

@@ -5,6 +5,7 @@ import BikeTrailCard from './BikeTrailCard';
 import NewTrail from './NewTrail';
 
 
+
 function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery}) {
   let exampleTrails = []
 

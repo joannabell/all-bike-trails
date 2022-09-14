@@ -111,13 +111,29 @@
       "firstName": "jordan",
       "lastName": "jennings",
       "email": "jordanjennings12@gmail.com",
-      "password": "flatiron"
+      "password": "flatiron",
+      "favorites":[
+        {
+          "id": 8,
+          "name": "Washington Secondary Bike Path",
+          "state": "RI",
+          "lengthMiles": 19,
+          "difficulty": "hard",
+          "isHilly": false,
+          "description": "The Washington Secondary Bike Path is the state's longest bike path at 19 miles from Cranston Street in Cranston to Log Bridge Road, just past Route 102, in western Coventry. It is named for the abandoned rail corridor once served by the Providence, Hartford, & Fishkill Railroad.",
+          "features": "As the path follows the former rail corridor, it is mostly flat but has a gradual downhill slope heading from west to east. The greatest elevation change is on the Trestle Trail segment. For more than half its length, the path runs parallel to the Pawtuxet River. Small boat access is possible at several points with formal canoe launches. The trail also features an equestrian trail now open from Route 117 at Old Main Street to Log Bridge Road. The equestrian path sometimes shares the bikeway, sometimes goes off path both north and south of the bikeway.",
+          "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG",
+          "comments": ""
+        }
+      ]
     },
     {
       "firstName": "test",
       "lastName": "test",
       "email": "test@gmail.com",
       "password": "123",
+      "favorites": [],
       "id": 2
     }
   ]

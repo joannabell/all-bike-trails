@@ -9,7 +9,8 @@ function Signup({handleCloseSignup, showSignup}) {
         firstName: "", 
         lastName: "", 
         email: "", 
-        password: "" 
+        password: "" ,
+        favorites: []
     });
     
     function handleFormChange(event){
@@ -34,7 +35,7 @@ function Signup({handleCloseSignup, showSignup}) {
             firstName: "", 
             lastName: "", 
             email: "", 
-            password: "" 
+            password: ""
         })
     }
 
@@ -44,21 +45,21 @@ function Signup({handleCloseSignup, showSignup}) {
           <Modal.Title>Sign up!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <Form onSubmit={handleSubmitForm} onChange={handleFormChange}>
+            <Form onSubmit={handleSubmitForm} >
                 <Form.Group className="mb-3">
-                    <Form.Control type="text" placeholder="Last name" name="lastName" value={signUpData.lastName} required/>
+                    <Form.Control type="text" placeholder="Last name" name="lastName" value={signUpData.lastName} onChange={handleFormChange}required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control type="text" placeholder="First name" name="firstName" value={signUpData.firstName} required/>
+                    <Form.Control type="text" placeholder="First name" name="firstName" value={signUpData.firstName} onChange={handleFormChange} required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Form.Control type="email" placeholder="Enter email" name="email" value={signUpData.email}/>
+                    <Form.Control type="email" placeholder="Enter email" name="email" onChange={handleFormChange} value={signUpData.email} required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Form.Control type="password" placeholder="Password" name="password" value={signUpData.password} />
+                    <Form.Control type="password" placeholder="Password" name="password" value={signUpData.password} onChange={handleFormChange} required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Button variant="primary" type="submit" onClick={handleCloseSignup}>
+                    <Button variant="primary" type="submit" >
                         Sign up
                     </Button>
                 </Form.Group>

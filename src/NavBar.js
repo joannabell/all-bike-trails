@@ -8,9 +8,10 @@ import Modal from 'react-bootstrap/Modal';
 import Signup from './Signup';
 import Login from './Login';
 
-function NavBar() {
+function NavBar({validateUser}) {
   const [ showLogin, setShowLogin ] = useState(false);
   const [ showSignup, setShowSignup ] = useState(false)
+  
 
   const handleCloseLogin = () => setShowLogin(false);
   const handleShowLogin = () => setShowLogin(true);
@@ -18,10 +19,8 @@ function NavBar() {
   const handleCloseSignup = () => setShowSignup(false);
   const handleShowSignup = () => setShowSignup(true);
   
-  function handleSignUp(){
-    const popup = window.open("/sign-up", "popup", "popup=true", "width=400px");
-  }
- 
+
+
   return (
     <>
     <div className="NavBar">
@@ -30,6 +29,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
+            <Nav.Link href="/favorites">Favorites</Nav.Link>
           </Nav>
           <Nav>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
@@ -40,7 +40,7 @@ function NavBar() {
       </Navbar>
     </div>
     <div className='login-modal'>
-      {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin}/> : ""}
+      {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} validateUser={validateUser}/> : ""}
     </div>
 
     <div className='signup-modal'>

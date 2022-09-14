@@ -6,7 +6,7 @@ import NewTrail from './NewTrail';
 
 
 
-function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery}) {
+function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery, validateUser}) {
   let exampleTrails = []
 
   exampleTrails = trails.slice(0, 3)
@@ -14,7 +14,6 @@ function Home({ handleCardClick, trails, searchValue, handleSearchChange, update
   return (
 
     <div className="Home">
-      <NavBar />
       <div id="searchDiv">
         <SearchBar handleSearchChange={handleSearchChange} searchValue={searchValue} updateSearchQuery={updateSearchQuery}/>
       </div>

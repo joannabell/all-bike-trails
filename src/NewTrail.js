@@ -6,7 +6,6 @@ function NewTrail () {
 
     return (
         <div>
-            <NavBar />
             <NewTrailForm />
         </div>
     )

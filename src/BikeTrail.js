@@ -8,7 +8,6 @@ function BikeTrail({ trail }) {
 
   return (
     <div>
-      <NavBar />
       <button onClick={() => history.goBack()}>Go back</button>
       <div className="BikeTrail">
         <h1>{trail.name}</h1>

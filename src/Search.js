@@ -10,7 +10,6 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
 
     return (
         <div>
-            <NavBar />
             <SearchBar 
             searchValue={searchValue} 
             handleSearchChange={handleSearchChange} 

@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Search from './Search';
 import BikeTrail from './BikeTrail';
 import NewTrail from './NewTrail';
-import { Route, Switch } from 'react-router-dom';
 import Home from "./Home";
-import { useHistory } from 'react-router-dom';
-import SignUp from './Signup';
-
+import NavBar from './NavBar';
+import Favorites from "./Favorites";
 
 
 
 function App() {
   const [ trails, setTrails ] = useState([])
   const [ users, setUsers ] = useState([])
-  const [ currentUser, setCurrentUser ] = useState()
+  const [ currentUser, setCurrentUser ] = useState({})
   const [ searchValue, setSearchValue ] = useState("")//updates on search change
   const [ searchQuery, setSearchQuery ] = useState("")//to render on search page between <p> element
   const [ currentTrail, setCurrentTrail ] = useState([])
@@ -35,8 +34,6 @@ function App() {
     .then(users => {
       setUsers(users)
     })
-
-    
   }, [])
 
   function handleSearchChange(event) {
@@ -52,6 +49,20 @@ function App() {
     history.push("/bike-trail")
   }
 
+   
+  function validateUser(loginInfo){
+    const validatedUser = users.filter((user) => {
+      if(user.email === loginInfo.email && user.password === loginInfo.password){
+        return user
+      }
+    })
+
+    if(validatedUser.length === 0){
+      alert("wrong username or password!")
+    }
+    setCurrentUser(validatedUser)
+  }
+
   const searchedTrails = trails.filter((trail) => {
     if(searchQuery.length > 0){
       return trail.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -60,6 +71,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar validateUser={validateUser} currentUser={currentUser}/>
       <Switch>
         <Route exact path="/">
           <Home 
@@ -86,8 +98,8 @@ function App() {
         <Route exact path="/bike-trail">
           <BikeTrail trail={currentTrail} />
         </Route >
-        <Route exact path="/sign-up">
-          <SignUp />
+        <Route exact path="/favorites">
+          <Favorites currentUser={currentUser} />
         </Route>
       </Switch>
     </div>

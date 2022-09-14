@@ -1,24 +1,6 @@
 {
   "bikeTrails": [
     {
-      "id": 1,
-      "name": "East Bay Bike Path",
-      "state": "RI",
-      "lengthMiles": 14.5,
-      "difficulty": "medium",
-      "isHilly": true,
-      "description": "The East Bay Bike Path is the first multi-town bike path we built in Rhode Island. It travels 14.5 miles from India Point Park in Providence to Independence Park in Bristol, passing many state and local parks and recreation areas. Connecting neighborhoods, schools and business districts, the path is popular with commuting cyclists heading into Providence.",
-      "features": "The path follows the former Providence and Bristol Railroad and is mostly flat, with the exception of a large hill as the path switches from an alignment alongside Veterans Memorial Parkway in East Providence to the former rail right-of-way.",
-      "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/East_Bay_and_Warren_Bike_Path.pdf",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/East_Bay_Bike_Path%2C_Bristol%2C_RI.jpg",
-      "comments": [
-        "Wow my favorite ride in the area!",
-        "Wow my favorite ride in the area!",
-        "It's nice that it goes along the bay",
-        "It's nice that it goes along the bay"
-      ]
-    },
-    {
       "id": 2,
       "name": "Blackstone River Bikeway",
       "state": "RI",
@@ -29,7 +11,10 @@
       "features": "The path follows the Blackstone River wherever possible, including on the tow paths of the historic Blackstone Canal. This highly scenic bikeway crosses the river many times, offering views of waterfalls, marshes and wildlife. Many old mills line the river too, evidence of the impact of the Industrial Revolution that earned the Blackstone the title of the 'hardest-working river in America.'",
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Blackstone_River_Bikeway.pdf",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Blackstone_River_State_Park_sign.jpg/1280px-Blackstone_River_State_Park_sign.jpg",
-      "comments": []
+      "comments": [
+        "Wow my favorite ride in the area!",
+        "It's nice that it goes along the bay"
+      ]
     },
     {
       "id": 3,
@@ -42,9 +27,7 @@
       "features": "The path is one piece of the Woonasquatucket River Greenway Project, created in the early 1990s by Fred Lippitt, then chairman of The Providence Plan, who earlier served as a State Representative. Lippitt championed the cause to spur development of abandoned industrial sites, to support the underserved neighborhoods in the Olneyville area, and highlight the river.",
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Fred_Lippitt_Woonasquatucket_River_Greenway.pdf",
       "image": "https://wrwc.org/wp/wp-content/uploads/2018/07/greenway.jpg",
-      "comments": [
-        "Wow my favorite ride in the area!"
-      ]
+      "comments": []
     },
     {
       "id": 4,

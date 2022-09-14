@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
 
 import Search from './Search';
 import BikeTrail from './BikeTrail';
@@ -8,8 +9,6 @@ import NewTrail from './NewTrail';
 import Home from "./Home";
 import NavBar from './NavBar';
 import Favorites from "./Favorites";
-
-
 
 function App() {
   const [ trails, setTrails ] = useState([])
@@ -22,7 +21,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/bikeTrails")
+    fetch("http://localhost:3001/bikeTrails")
     .then(res => res.json())
     .then(bikeTrails => {
       setTrails(bikeTrails)

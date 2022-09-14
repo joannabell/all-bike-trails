@@ -46,9 +46,9 @@ function NewTrailForm( setTrails, trails ) {
         alert("New Trail Successfully Added!")
     }
 
-    return ( //uses label and h3 tags, we will see which is better
+    return (
     <div className="FormContainer">
-        <Form id="NewTrailForm" onSubmit={handleSubmit} className="m-3" style={{width: '60%'}}>
+        <Form id="NewTrailForm" onSubmit={handleSubmit} className="m-3" style={{width: '60%' }}>
             <Form.Group className="mb-3" controlId="formGridName">
                 <Form.Label>Trail Name:</Form.Label>
                 <Form.Control 

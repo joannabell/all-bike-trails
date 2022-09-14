@@ -35,6 +35,15 @@ function App() {
     })
   }, [])
 
+  function handleDelete(updatedTrails) {
+    setTrails(updatedTrails)
+  }
+
+  function handleComments(updatedTrails, updatedTrail) {
+    setTrails(updatedTrails)
+    setCurrentTrail(updatedTrail)
+  }
+  
   function handleSearchChange(event) {
     setSearchValue(event.target.value)
   }
@@ -95,7 +104,7 @@ function App() {
           <NewTrail />
         </Route >
         <Route exact path="/bike-trail">
-          <BikeTrail trail={currentTrail} />
+          <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />
         </Route >
         <Route exact path="/favorites">
           <Favorites currentUser={currentUser} />

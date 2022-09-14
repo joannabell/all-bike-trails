@@ -14,7 +14,7 @@ import Favorites from "./Favorites";
 function App() {
   const [ trails, setTrails ] = useState([])
   const [ users, setUsers ] = useState([])
-  const [ currentUser, setCurrentUser ] = useState({})
+  const [ currentUser, setCurrentUser ] = useState([])
   const [ searchValue, setSearchValue ] = useState("")//updates on search change
   const [ searchQuery, setSearchQuery ] = useState("")//to render on search page between <p> element
   const [ currentTrail, setCurrentTrail ] = useState([])
@@ -69,8 +69,11 @@ function App() {
     if(validatedUser.length === 0){
       alert("wrong username or password!")
     }
+
     setCurrentUser(validatedUser)
   }
+
+  console.log(currentUser)
 
   const searchedTrails = trails.filter((trail) => {
     if(searchQuery.length > 0){
@@ -81,6 +84,7 @@ function App() {
   return (
     <div className="App">
       <NavBar validateUser={validateUser} currentUser={currentUser}/>
+      <Favorites users={users} currentUser={currentUser} />
       <Switch>
         <Route exact path="/">
           <Home 
@@ -107,9 +111,6 @@ function App() {
         <Route exact path="/bike-trail">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />
         </Route >
-        <Route exact path="/favorites">
-          <Favorites currentUser={currentUser} />
-        </Route>
       </Switch>
     </div>
   );

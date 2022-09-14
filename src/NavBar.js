@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import Signup from './Signup';
 import Login from './Login';
 
-function NavBar({validateUser}) {
+function NavBar({validateUser, currentUser}) {
   const [ showLogin, setShowLogin ] = useState(false);
   const [ showSignup, setShowSignup ] = useState(false)
   
@@ -20,7 +20,6 @@ function NavBar({validateUser}) {
   const handleShowSignup = () => setShowSignup(true);
   
 
-
   return (
     <>
     <div className="NavBar">
@@ -29,9 +28,9 @@ function NavBar({validateUser}) {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
-            <Nav.Link href="/favorites">Favorites</Nav.Link>
+            <Nav.Link href='/favorites'>Favorites</Nav.Link>
           </Nav>
-            <img src="../assets/all-bike-trails-logo.png" />
+            <img src="./assets/all-bike-trails-logo.png" />
           <Nav>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
             <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>

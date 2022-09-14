@@ -7,7 +7,7 @@ function SearchBar({searchValue, handleSearchChange, updateSearchQuery}) {
   function handleSubmit(event) {
     event.preventDefault()
     history.push("/search") 
-
+    
     updateSearchQuery(searchValue)
   }
 

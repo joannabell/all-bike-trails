@@ -21,14 +21,14 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/bikeTrails")
+    fetch("http://localhost:3000/bikeTrails")
     .then(res => res.json())
     .then(bikeTrails => {
       setTrails(bikeTrails)
       setCurrentTrail(bikeTrails[0])
     })
 
-    fetch("http://localhost:3001/users")
+    fetch("http://localhost:3000/users")
     .then(res => res.json())
     .then(users => {
       setUsers(users)

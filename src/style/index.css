@@ -1,1 +1,24 @@
+:root {
+    --color: black;
+    --background: white;
+  }
+  
+  /* layout */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    font-family: "Arial", monospace;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+  }
+  
+  .App {
+    color: black;
+    background-color: white;
+    min-height: 100vh;
+  }  

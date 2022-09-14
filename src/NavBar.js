@@ -31,13 +31,12 @@ function NavBar({validateUser}) {
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
             <Nav.Link href="/favorites">Favorites</Nav.Link>
           </Nav>
-          <Nav>
-          <img src="/home/bkurose/Development/code/phase-2/all-bike-trails/assets/all-bike-trails-logo.png" /> 
-          </Nav>
+            <img src="../assets/all-bike-trails-logo.png" />
           <Nav>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
             <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
           </Nav>
+        
         </Container>
       </Navbar>
     </div>

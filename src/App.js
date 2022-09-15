@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 import Search from './Search';
 import BikeTrail from './BikeTrail';
-import NewTrail from './NewTrail';
+import NewTrailForm from './NewTrailForm';
 import Home from "./Home";
 import NavBar from './NavBar';
 import Favorites from "./Favorites";
@@ -104,7 +104,7 @@ function App() {
           />
         </Route >
         <Route exact path="/new-trail">
-          <NewTrail />
+          <NewTrailForm />
         </Route >
         <Route exact path="/bike-trail">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />

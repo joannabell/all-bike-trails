@@ -93,6 +93,19 @@
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG",
       "comments": []
+    },
+    {
+      "id": 1663252388243,
+      "name": "df",
+      "state": "",
+      "lengthMiles": 0,
+      "difficulty": "easy",
+      "isHilly": false,
+      "description": "",
+      "features": "",
+      "mapPDF": "",
+      "image": "",
+      "comments": []
     }
   ],
   "users": [

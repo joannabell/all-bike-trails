@@ -12,18 +12,16 @@ function BikeTrailCard({ trail, handleCardClick }) {
       <p>{trail.difficulty}</p><p>{trail.lengthMiles} Miles</p>
       <p>{trail.description}</p> */}
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={trail.image} />
+      <Card.Img variant="top" src={trail.image} className="hovereffect"/>
       <Card.Body>
-        <Card.Title>{trail.name}</Card.Title>
+        <Card.Title className="card-title text-truncate">{trail.name}</Card.Title>
         <Card.Text className="text-truncate">
          {trail.description}
         </Card.Text>
+        <Card.Text className='text-success m-1'>{trail.difficulty}</Card.Text>
+        <Card.Text className='m-1'>{trail.lengthMiles} miles</Card.Text>
+        <Card.Text className='m-1'>State: {trail.state}</Card.Text>
       </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>{trail.difficulty}</ListGroup.Item>
-        <ListGroup.Item>{trail.lengthMiles}</ListGroup.Item>
-        <ListGroup.Item>State: {trail.state}</ListGroup.Item>
-      </ListGroup>
     </Card>
     </div>
   );

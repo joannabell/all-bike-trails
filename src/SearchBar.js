@@ -12,17 +12,22 @@ function SearchBar({searchValue, handleSearchChange, updateSearchQuery}) {
   }
 
   return (
+    <>
+    <div className='background-image'></div>
     <div className="SearchBar">
       <form className='search-bar' onSubmit={handleSubmit}>
+        <h1>Find a trail near you</h1>
         <input
         type="text"
         placeholder="Search by trail name or keyword" 
+        className='search-input'
         value={searchValue}
         onChange={handleSearchChange}
         />
-        <input type="submit" value="Search"/>
+        <input type="submit" value="Search" className='search-submit'/>
       </form>
     </div>
+    </>
   );
 }
 

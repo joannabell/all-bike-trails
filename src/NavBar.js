@@ -26,12 +26,13 @@ function NavBar({validateUser, currentUser}) {
     <div className="NavBar">
       <Navbar bg="light" variant="light">
         <Container>
-          <Nav className="me-auto">
+          <Nav className=''>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
           </Nav>
-            <Image src="../assets/all-bike-trails-logo.png" />
+            
           <Nav>
+            <img src="./assets/all-bike-trails-logo.jpeg"/>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
             <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
           </Nav>

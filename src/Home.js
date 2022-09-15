@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar'
 import SearchBar from './SearchBar'
 import BikeTrailCard from './BikeTrailCard';
-import NewTrail from './NewTrail';
+
 
 
 

@@ -47,10 +47,11 @@ function NewTrailForm( setTrails, trails ) {
     }
 
     return (
-    <div className="content">
+    <div className="newTrail-form">
+        
         <Form id="NewTrailForm" onSubmit={handleSubmit} className="m-3" style={{width: '60%' }}>
+        <h2>Submit a New Trail</h2>
             <Form.Group className="mb-3" controlId="formGridName">
-                <Form.Label>Trail Name:</Form.Label>
                 <Form.Control 
                     onChange={handleChange}
                     value={formData.name}
@@ -58,13 +59,13 @@ function NewTrailForm( setTrails, trails ) {
                     name="name"
                     id="name"
                     placeholder="Enter bike trail name..."
-                    className="input-text"
+                    className="input-text mb-4"
                 />
             </Form.Group>
             <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
                     <Form.Select value={formData.state} onChange={handleChange} name="state" defaultValue="Choose...">
+                        <option value="State">State</option>
                         <option value="Alabama">AL</option>
                         <option value="Alaska">AK</option>
                         <option value="Arkansa">AR</option>
@@ -118,20 +119,20 @@ function NewTrailForm( setTrails, trails ) {
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridLength">
-                    <Form.Label>Length in Miles:</Form.Label>
                     <Form.Control 
                         onChange={handleChange}
                         value={formData.miles}
                         type="number"
                         name="lengthMiles"
                         placeholder="Miles..."
-                        className="input-number"
+                        className="input-number mb-4"
                     />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridDifficulty">
-                    <Form.Label>Difficulty</Form.Label>
+                
                     <Form.Select value={formData.difficulty} onChange={handleChange} name="difficulty" defaultValue="Choose a Difficulty">
+                    <option style={{color: '#00A300'}} value="easy">Difficulty</option>
                         <option style={{color: '#00A300'}} value="easy">Easy</option>
                         <option style={{color: '#FFFF00'}} value="medium">Medium</option>
                         <option style={{color: '#E32227'}} value="hard">Hard</option>
@@ -139,18 +140,18 @@ function NewTrailForm( setTrails, trails ) {
                 </Form.Group>
             </Row>
             <Form.Group className="mb-3" controlId="formGridDescription">
-                <Form.Label>Description:</Form.Label>
+               
                 <Form.Control
                     onChange={handleChange}
                     value={formData.description}
                     type="text"
                     name="description"
                     placeholder="Enter trail description..."
-                    className="input-text"
+                    className="input-text mb-4"
                 />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formGridDescription">
-                <Form.Label>Features:</Form.Label>
+            <Form.Group className="mb-4" controlId="formGridDescription">
+                
                 <Form.Control 
                     onChange={handleChange}
                     value={formData.features}
@@ -160,8 +161,7 @@ function NewTrailForm( setTrails, trails ) {
                     className="input-text"
                 />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formGridImage">
-                <Form.Label>Upload an Image from Link:</Form.Label>
+            <Form.Group className="mb-4" controlId="formGridImage">
                 <Form.Control 
                     onChange={handleChange}
                     value={formData.image}
@@ -171,8 +171,8 @@ function NewTrailForm( setTrails, trails ) {
                     className="input-text"
                 />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formGridMap">
-                <Form.Label>Upload a Map from PDF Link:</Form.Label>
+            <Form.Group className="mb-4" controlId="formGridMap">
+                
                 <Form.Control 
                     onChange={handleChange}
                     value={formData.mapPDF}
@@ -183,12 +183,12 @@ function NewTrailForm( setTrails, trails ) {
                 />
             </Form.Group>
             <Row>
-                <Form.Group as={Col} className="mb-3" id="formGridCheckbox">
+                <Form.Group as={Col} className="mb-4" id="formGridCheckbox">
                     <Form.Check type="checkbox" label="Is the trail hilly?" />
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" id="formGridSubit">
-                    <Button style={{float: "right"}} variant="primary" type="submit">
+                    <Button style={{float: "right"}} variant="primary" type="submit" className='btn-light'>
                         Submit
                     </Button>
                 </Form.Group>

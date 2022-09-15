@@ -27,9 +27,9 @@ function NavBar({validateUser, currentUser}) {
       <Navbar bg="light" variant="light">
         <Container>
           <Nav className=''>
+            <img style={{ width: "20%", height: "20%" }} src="/all-bike-trails-logo.png" alt="logo" />
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
-            <img style={{ width: "10%", height: "10%" }} src="/all-bike-trails-logo.png" alt="logo" />
           </Nav>
             
           <Nav>

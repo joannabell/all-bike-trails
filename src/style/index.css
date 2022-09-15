@@ -121,6 +121,11 @@
     cursor: pointer;
   }
 
-
+  .content {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
 
 

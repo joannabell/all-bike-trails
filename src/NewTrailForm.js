@@ -47,7 +47,7 @@ function NewTrailForm( setTrails, trails ) {
     }
 
     return (
-    <div className="FormContainer">
+    <div className="content">
         <Form id="NewTrailForm" onSubmit={handleSubmit} className="m-3" style={{width: '60%' }}>
             <Form.Group className="mb-3" controlId="formGridName">
                 <Form.Label>Trail Name:</Form.Label>

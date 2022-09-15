@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Signup from './Signup';
 import Login from './Login';
+import Button from 'react-bootstrap/Button'
 import { NavLink } from "react-router-dom";
 
 function NavBar({validateUser, currentUser}) {
@@ -34,17 +35,17 @@ function NavBar({validateUser, currentUser}) {
         </div>
   
         <div class="center">
-            <img class="logo" src="https://iili.io/PmKQmg.png" alt="logo" />
+            <img class="logo" src="https://iili.io/PmKQmg.png" alt="logo" style={{height: "50px", width:" 220px"}}/>
         </div>
 
         <div class="right">
-          <a class="btn btn-secondary" href="#" role="button">Sign Up</a>
-          <a class="btn btn-secondary" href="#" role="button">Log In</a>
+          <Button className="px-3 mx-2 btn-secondary btn-small rounded-pill" onClick={handleShowSignup} style={{fontSize: "14px"}}>Sign Up</Button>
+          <Button className="px-3 btn-secondary btn-small rounded-pill" onClick={handleShowLogin} style={{fontSize: "14px"}}>Log In</Button>
         </div>
-  
       </div>
+    
     </header>
-
+    <hr style={{borderBottom: "1px solid black"}}></hr>
     <div className='login-modal'>
       {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} validateUser={validateUser}/> : ""}
     </div>

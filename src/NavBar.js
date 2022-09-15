@@ -26,7 +26,7 @@ function NavBar({validateUser, currentUser}) {
     <div className="navbar navbar-dark bg-dark">
       <Navbar >
           <Nav >
-            <img style={{ width: "15%", height: "15%" }} src="/all-bike-trails-logo.png" alt="logo" />
+            <img style={{ width: "10%", height: "10%" }} src="/all-bike-trails-logo.png" alt="logo" />
             <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" href="/" >Home</Button>
             <Button className="px-4 btn-secondary btn-sm rounded-pill" href="/new-trail">Add New Trail</Button>
            </Nav>

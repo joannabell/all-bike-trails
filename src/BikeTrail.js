@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar"
-import { useHistory } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import { useHistory, useParams } from 'react-router-dom';
 
 function BikeTrail({ trail, trails, handleDelete, handleComments }) {
   const history = useHistory();
   const [comments, setComments] = useState("")
+  const { id } = useParams()
 
   function deleteTrail() {
-    fetch(`http://localhost:3000/bikeTrails/${trail.id}`, {
+    fetch(`http://localhost:3000/bikeTrails/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -50,12 +52,16 @@ function BikeTrail({ trail, trails, handleDelete, handleComments }) {
   }
 
   return (
-    <div>
-      <button onClick={() => history.goBack()}>Go back</button>
+    <div className="details-page">
+      <Button className="btn-light" id="go-back" onClick={() => history.goBack()}>Go back</Button>
+      <header style={{backgroundImage:`url(${trail.image})`, height: "500px"}}>
+      <h1 className='details-title'>{trail.name}</h1>
+      </header>
+      
       <div className="BikeTrail">
-        <h1>{trail.name}</h1>
-        <p>State: {trail.state}</p>
-        <img src={trail.image} style={{width:"600px"}}/>
+     
+        <img src={trail.image} style={{width:"700px"}}/>
+        <p>{trail.state}</p>
         <p>{trail.difficulty}</p>
         <p>{trail.lengthMiles} Miles</p>
         <p>{trail.isHilly ? "Is a hilly ride" : "Is not a hilly ride"}</p>

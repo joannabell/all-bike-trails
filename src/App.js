@@ -52,9 +52,8 @@ function App() {
     setSearchQuery(newSearch)
 }
 
-  function handleCardClick(trail) {
-    setCurrentTrail(trail)
-    history.push("/bike-trail")
+  function handleCardClick(id) {
+    history.push(`trail/${id}`)
   }
 
    
@@ -106,7 +105,7 @@ function App() {
         <Route exact path="/new-trail">
           <NewTrailForm />
         </Route >
-        <Route exact path="/bike-trail">
+        <Route exact path="/trail/:id">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />
         </Route >
       </Switch>

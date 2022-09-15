@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar"
 
 function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSearchQuery, handleCardClick }) {
 
-    const showTrails = trails.map((trail) => <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/>)
+    const showTrails = trails.map((trail) => <div><BikeTrailCard handleCardClick={handleCardClick} trail={trail}/><hr></hr></div>)
 
     return (
         <div>
@@ -15,7 +15,7 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
             handleSearchChange={handleSearchChange} 
             updateSearchQuery={updateSearchQuery}
             />
-            <p style={{marginTop: "20px"}}>{searchQuery.length === 0? "" : `showing results for ${searchQuery}...` }</p>
+            <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
             <div className="trails-container">
                 {showTrails}
             </div>

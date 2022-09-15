@@ -352,3 +352,28 @@ details page */
       font-weight: 800;
       font-size: 26px;
   }
+
+  .trails-container {
+    margin: 0 100px;
+  }
+
+  .search-cards {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+  }
+
+  .search-cards img{
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .search-cards .content {
+    text-align: left;
+    justify-content: right;
+    margin-left: 20px;
+  }
+
+  .search-cards p {
+    font-size: 14px;
+  }

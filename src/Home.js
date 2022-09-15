@@ -35,7 +35,7 @@ function Home({ handleCardClick, trails, searchValue, handleSearchChange, update
       <div className='examples-box'>
       <h3>Recommendations for you</h3>
       <div id="examples">
-        {exampleTrails.map(trail => <div className='example-cards'> <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/></div>)}
+        {exampleTrails.map(trail => <div className='example-cards'> <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/></div>)}-serv
       </div>
       </div>
     </div>

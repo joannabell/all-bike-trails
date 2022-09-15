@@ -34,10 +34,7 @@ function NavBar({validateUser, currentUser}) {
         </div>
   
         <div class="center">
-            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEA3r4Io9tRcDoLZF1AD-i7EB3z9D-1_fs3g&usqp=CAU" alt="logo" />
-          <span class="logotext" style={{fontWeight: 'bold'}}>
-          All Bike Trails
-          </span>
+            <img class="logo" src="https://iili.io/PmKQmg.png" alt="logo" />
         </div>
 
         <div class="right">

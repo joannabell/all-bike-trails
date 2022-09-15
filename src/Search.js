@@ -37,7 +37,6 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
             handleSearchChange={handleSearchChange} 
             updateSearchQuery={updateSearchQuery}
             />
-<<<<<<< HEAD
             <Row>
             <Form.Group as={Col} id="difficultyFilter" controlId="formDifficulty">
                 <Form.Select value={diffFilter} onChange={handleDifficulty} name="difficulty" defaultValue="Choose a Difficulty">
@@ -52,9 +51,6 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
             </Form.Group>
             </Row>
             <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
-=======
-            <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for "${searchQuery}"...` }</p>
->>>>>>> e1912fa2c141c36d16967d1f72e7a5de658ea580
             <div className="trails-container">
                 {showTrails}
             </div>

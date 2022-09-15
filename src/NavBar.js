@@ -25,7 +25,7 @@ function NavBar({validateUser, currentUser}) {
   
         <div class="center">
           <h4 href="#">
-            <a href="#">Logo Here</a>
+            <a href="">Logo Here</a>
           </h4>
         </div>
   

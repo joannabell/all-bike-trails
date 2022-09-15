@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar"
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Button from 'react-bootstrap/Button';
 import { useHistory, useParams } from 'react-router-dom';
 
@@ -51,9 +52,18 @@ function BikeTrail({ trail, trails, handleDelete, handleComments }) {
     setComments(e.target.value)
   }
 
+  
+
   return (
     <div className="details-page">
-      <Button className="btn-light" id="go-back" onClick={() => history.goBack()}>Go back</Button>
+      <Breadcrumb>
+      <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item onClick={() => history.goBack()}>
+        Search
+      </Breadcrumb.Item>
+      <Breadcrumb.Item active>Details</Breadcrumb.Item>
+    </Breadcrumb> 
+      
       <header style={{backgroundImage:`url(${trail.image})`, height: "500px"}}>
       </header>
       <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "20px", height: "65px"}}>
@@ -62,7 +72,7 @@ function BikeTrail({ trail, trails, handleDelete, handleComments }) {
         <p style={{color: "white"}}>{trail.lengthMiles} miles</p>
         <p style={{color: "white"}}>{trail.isHilly ? "Turraine: hilly" : "Turraine: flat"}</p>
         </div>
-      <h1 className='details-title'>{trail.name}</h1>
+      <h1 style={{marginTop: "20px"}}className='details-title'>{trail.name}</h1>
       <p style={{textAlign: "center", fontSize: "20px", color: "gray"}}>{trail.state}</p>
       <div className="BikeTrail">
    

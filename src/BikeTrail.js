@@ -94,7 +94,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
         <p>{trail.description}</p>
         <h3>Features</h3>
         <p>{trail.features}</p>
-        <iframe src={trail.mapPDF} style={{height:"250px", border: "2px black solid", width: "250px"}}/>
+        <iframe src={trail.mapPDF} style={{height:"250px", border: "2px black solid", width: "200px"}}/>
       <div className='comment-container'>
         <h2 style={{paddingBottom: "20px"}}>Comments</h2>
         <div className='add-comment'>

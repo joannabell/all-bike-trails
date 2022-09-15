@@ -123,7 +123,34 @@
       "lastName": "test",
       "email": "test@gmail.com",
       "password": "123",
-      "favorites": [],
+      "favorites": [
+        {
+          "id": 8,
+          "name": "Washington Secondary Bike Path",
+          "state": "RI",
+          "lengthMiles": 19,
+          "difficulty": "hard",
+          "isHilly": false,
+          "description": "The Washington Secondary Bike Path is the state's longest bike path at 19 miles from Cranston Street in Cranston to Log Bridge Road, just past Route 102, in western Coventry. It is named for the abandoned rail corridor once served by the Providence, Hartford, & Fishkill Railroad.",
+          "features": "As the path follows the former rail corridor, it is mostly flat but has a gradual downhill slope heading from west to east. The greatest elevation change is on the Trestle Trail segment. For more than half its length, the path runs parallel to the Pawtuxet River. Small boat access is possible at several points with formal canoe launches. The trail also features an equestrian trail now open from Route 117 at Old Main Street to Log Bridge Road. The equestrian path sometimes shares the bikeway, sometimes goes off path both north and south of the bikeway.",
+          "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG",
+          "comments": []
+        },
+        {
+          "id": 7,
+          "name": "Warren Bike Path",
+          "state": "RI",
+          "lengthMiles": 1,
+          "difficulty": "easy",
+          "isHilly": false,
+          "description": "The Warren Bike Path is one of the shortest bikeways in Rhode Island. The 1-mile path in the eastern portion of town extends from the Kickemuit River to Long Lane, close to the Massachusetts border. The path follows the abandoned Warren-Fall River Railroad spur. The new path provides a major recreational asset to the town, and provides options for biking or walking to school as it links Kickemuit Middle School, Hugh Cole Elementary School and Warren Recreation Park.",
+          "features": "The path is mostly level. On-road options exist for getting to the nearby East Bay Bike Path.",
+          "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/East_Bay_and_Warren_Bike_Path.pdf",
+          "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_457,q_50,w_810/https://assets.simpleviewinc.com/simpleview/image/upload/crm/rhodeisland/east-warren-bike-path_7AAAA437-5056-A36A-094337663992A115-7aaaa31a5056a36_7aaaa49b-5056-a36a-0936ea141c103f96.jpg",
+          "comments": []
+        }
+      ],
       "id": 2
     }
   ]

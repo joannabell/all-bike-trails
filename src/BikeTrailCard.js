@@ -15,7 +15,7 @@ function BikeTrailCard({ trail, handleCardClick }) {
       <Card.Img variant="top" src={trail.image} />
       <Card.Body>
         <Card.Title>{trail.name}</Card.Title>
-        <Card.Text>
+        <Card.Text className="text-truncate">
          {trail.description}
         </Card.Text>
       </Card.Body>

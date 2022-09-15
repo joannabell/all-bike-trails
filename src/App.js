@@ -83,7 +83,6 @@ function App() {
   return (
     <div className="App">
       <NavBar validateUser={validateUser} currentUser={currentUser}/>
-      <Favorites users={users} currentUser={currentUser} />
       <Switch>
         <Route exact path="/">
           <Home 

@@ -67,6 +67,7 @@
   }
 
   .about-section {
+    padding-top: 50px;
     width: 100%;
     padding: auto;
     display: flex;
@@ -92,6 +93,7 @@
 
   .about-confidence {
     width: 280px;
+    height: 200px;
     text-align: center;
   }
 

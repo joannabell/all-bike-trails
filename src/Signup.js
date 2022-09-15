@@ -42,7 +42,7 @@ function Signup({handleCloseSignup, showSignup}) {
     return (
         <Modal show={showSignup} onHide={handleCloseSignup}>
         <Modal.Header closeButton>
-          <Modal.Title>Sign up!</Modal.Title>
+          <Modal.Title>Register to Recieve Updates!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <Form onSubmit={handleSubmitForm} >

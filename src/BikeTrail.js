@@ -85,7 +85,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
       <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "16px", height: "60px", fontWeight: 300}}>
         <p style={{color: "white"}}>Difficulty : {trail.difficulty}</p>
         <p style={{color: "white"}}>Length : {trail.lengthMiles} miles</p>
-        <p style={{color: "white"}}>{trail.isHilly ? "Turraine : Hilly" : "Turraine : Flat"}</p>
+        <p style={{color: "white"}}>{trail.isHilly ? "Terrain : Hilly" : "Terrain : Flat"}</p>
       </div>
       <h1 style={{marginTop: "20px"}}className='details-title'>{trail.name}</h1>
       <p style={{textAlign: "center", fontSize: "20px", color: "gray"}}>{trail.state}</p>

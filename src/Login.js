@@ -19,7 +19,7 @@ function Login({handleCloseLogin, showLogin, validateUser}){
         <div className="login">
                <Modal show={showLogin} onHide={handleCloseLogin}>
         <Modal.Header closeButton>
-          <Modal.Title>Login</Modal.Title>
+          <Modal.Title>Log in</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <Form onSubmit={handleFormSubmit}>
@@ -31,7 +31,7 @@ function Login({handleCloseLogin, showLogin, validateUser}){
             </Form.Group>
             <Form.Group className="mb-3">
                 <Button variant="primary" type="submit">
-                    Login
+                    Log in
                 </Button>
             </Form.Group>
         </Form>

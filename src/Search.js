@@ -15,7 +15,7 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
             handleSearchChange={handleSearchChange} 
             updateSearchQuery={updateSearchQuery}
             />
-            <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
+            <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for "${searchQuery}"...` }</p>
             <div className="trails-container">
                 {showTrails}
             </div>

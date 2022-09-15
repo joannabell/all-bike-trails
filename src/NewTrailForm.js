@@ -53,7 +53,7 @@ function NewTrailForm( setTrails, trails ) {
 
     return (
     <div className="newTrail-form">
-        <Form id="NewTrailForm" onSubmit={handleSubmit} >
+        <Form id="new-trail-form" onSubmit={handleSubmit} >
         <h2>Submit a New Trail</h2>
             <Form.Group className="mb-3" controlId="formGridName">
                 <Form.Control 

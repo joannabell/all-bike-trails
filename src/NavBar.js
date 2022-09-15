@@ -31,7 +31,7 @@ function NavBar({validateUser, currentUser}) {
             <Button className="px-4 btn-secondary btn-sm rounded-pill" href="/new-trail">ADD NEW TRAIL</Button>
            </Nav>
 
-          <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" onClick={handleShowSignup}>SIGN UP</     Button>
+          <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill" onClick={handleShowSignup}>SIGN UP</     Button>
           <Button className="px-4 btn-secondary btn-sm rounded-pill" onClick={handleShowLogin}>LOGIN</Button>
         </Navbar>
     </div>

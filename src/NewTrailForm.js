@@ -194,7 +194,7 @@ function NewTrailForm( setTrails, trails ) {
             </Form.Group>
             <Row>
                 <Form.Group as={Col} className="mb-4" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Is the trail hilly?" />
+                    <Form.Check onChange={handleChange} value={formData.isHilly} type="checkbox" label="Is the trail hilly?" />
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" id="formGridSubit">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Signup from './Signup';
 import Login from './Login';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar({validateUser, currentUser}) {
   const [ showLogin, setShowLogin ] = useState(false);
@@ -18,32 +18,32 @@ function NavBar({validateUser, currentUser}) {
   return (
     <>
     <div className="navbar navbar-dark bg-dark">
+
     </div>
 
     <header className="navbar hidden-sm-down">
       <div className="container">
   
-        <div class="center">
-          <h4 href="#">
-            <a href="">Logo Here</a>
-          </h4>
-        </div>
-  
         <div class="left">
           <ul>
             <li class="active">
-              <a href="#">Home</a>
+              <NavLink exact to="/">Home</NavLink>
             </li>
   
             <li>
-              <a href="#">Add New Trail</a>
+            <NavLink exact to="/NewTrailForm">Add New Trail</NavLink>
             </li>
-  
           </ul>
+        </div>
+
+        <div class="center">
+          <h4 href="#">
+            <img src="https://i.pinimg.com/600x315/1a/7b/32/1a7b32ea3c2271e5448ea08b0d250d09.jpg" alt="logo" className="logo" />
+          </h4>
         </div>
   
         <div class="right">
-          <a class="btn btn-secondary" href="#" role="button">Register</a>
+          <a class="btn btn-secondary" href="#" role="button">Sign Up</a>
           <a class="btn btn-secondary" href="#" role="button">Login</a>
         </div>
   

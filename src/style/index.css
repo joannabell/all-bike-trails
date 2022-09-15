@@ -178,7 +178,13 @@ details page */
 
 }
 
+.addComment{
+  width: 400px;
+}
 
+.comment-container {
+  margin-top: 50px;
+}
 
 
 

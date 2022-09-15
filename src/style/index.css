@@ -129,26 +129,24 @@
     cursor: pointer;
   }
 
+/* background for form */
   .newTrail-form {
+    height: 1000px;
+    background-image: url("https://images.pexels.com/photos/443412/pexels-photo-443412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    color: darkgreen;
+    margin: auto;
+  }
+
+  #NewTrailForm {
     position: relative;
-    display: flex;
-    max-width: 600px;
     margin: auto;
     background: white;
-    padding: 20px;
-    margin-top: 40px;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1608139446491-2910a9abf308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
-    color: white;
+    align-items: center; 
+    width: 600px; 
+    padding: 80px;
   }
-
-
-  .newTrail-form h2 {
-    padding: 10px;
-  }
-
 /* 
 details page */
 

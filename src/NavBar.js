@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button"
 import Modal from 'react-bootstrap/Modal';
 import Signup from './Signup';
 import Login from './Login';
+import Image from 'react-bootstrap/Image';
 
 function NavBar({validateUser, currentUser}) {
   const [ showLogin, setShowLogin ] = useState(false);
@@ -29,7 +30,7 @@ function NavBar({validateUser, currentUser}) {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
           </Nav>
-            <img src="./assets/all-bike-trails-logo.png" />
+            <Image src="../assets/all-bike-trails-logo.png" />
           <Nav>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
             <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>

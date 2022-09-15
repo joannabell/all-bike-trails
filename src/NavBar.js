@@ -29,10 +29,10 @@ function NavBar({validateUser, currentUser}) {
           <Nav className=''>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/new-trail">Add Trail</Nav.Link>
+            <img style={{ width: "10%", height: "10%" }} src="/all-bike-trails-logo.png" alt="logo" />
           </Nav>
             
           <Nav>
-            <img src="./assets/all-bike-trails-logo.jpeg"/>
             <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
             <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
           </Nav>

@@ -36,7 +36,7 @@ function NewTrailForm({ addTrails }) {
         if(formData.state === "State" || formData.state === "") return alert("Please select a State!")
         if(!(formData.mapPDF.toLowerCase().includes(".pdf".toLowerCase()))) return alert("Please enter a valid .pdf map!")
         else {
-            fetch("http://localhost:3000/bikeTrails", {
+            fetch("https://radiant-sands-06167.herokuapp.com/bikeTrails", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

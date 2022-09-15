@@ -20,7 +20,7 @@ function Signup({handleCloseSignup, showSignup}) {
     function handleSubmitForm(event){
         event.preventDefault()
         console.log(signUpData)
-        fetch("http://localhost:3000/users", {
+        fetch("https://radiant-sands-06167.herokuapp.com/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

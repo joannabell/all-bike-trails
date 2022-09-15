@@ -21,14 +21,14 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/bikeTrails")
+    fetch("https://radiant-sands-06167.herokuapp.com/bikeTrails")
     .then(res => res.json())
     .then(bikeTrails => {
       setTrails(bikeTrails)
       setCurrentTrail(bikeTrails[0])
     })
 
-    fetch("http://localhost:3000/users")
+    fetch("https://radiant-sands-06167.herokuapp.com/users")
     .then(res => res.json())
     .then(users => {
       setUsers(users)

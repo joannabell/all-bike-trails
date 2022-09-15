@@ -12,7 +12,7 @@ function NewTrailForm( setTrails, trails ) {
         name: "",
         state: "",
         lengthMiles: 0,
-        difficulty: "easy",
+        difficulty: "",
         isHilly: false,
         description: "",
         features: "",
@@ -32,18 +32,23 @@ function NewTrailForm( setTrails, trails ) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch("http://localhost:3000/bikeTrails", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json" 
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(res => res.json())
-        .then(newTrail => setTrails([...trails, newTrail]))
-        history.push("/")
-        alert("New Trail Successfully Added!")
+        if(formData.difficulty === "diff" || formData.difficulty === "") return alert("Please select a difficulty level!")
+        if(formData.state === "State" || formData.state === "") return alert("Please select a State!")
+        if(!(formData.mapPDF.toLowerCase().includes(".pdf".toLowerCase()))) return alert("Please enter a valid .pdf map!")
+        else {
+            fetch("http://localhost:3000/bikeTrails", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json" 
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(res => res.json())
+            .then(newTrail => setTrails([...trails, newTrail]))
+            history.push("/")
+            alert("New Trail Successfully Added!")
+        }
     }
 
     return (
@@ -59,6 +64,7 @@ function NewTrailForm( setTrails, trails ) {
                     id="name"
                     placeholder="Enter bike trail name..."
                     className="input-text mb-4"
+                    required
                 />
             </Form.Group>
             <Row className="mb-3">
@@ -125,13 +131,14 @@ function NewTrailForm( setTrails, trails ) {
                         name="lengthMiles"
                         placeholder="Miles..."
                         className="input-number mb-4"
+                        required
                     />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridDifficulty">
                 
                     <Form.Select value={formData.difficulty} onChange={handleChange} name="difficulty" defaultValue="Choose a Difficulty">
-                    <option style={{color: '#00A300'}} value="easy">Difficulty</option>
+                        <option style={{color: '#00A300'}} value="diff">Difficulty</option>
                         <option style={{color: '#00A300'}} value="easy">Easy</option>
                         <option style={{color: '#FFFF00'}} value="medium">Medium</option>
                         <option style={{color: '#E32227'}} value="hard">Hard</option>
@@ -147,6 +154,7 @@ function NewTrailForm( setTrails, trails ) {
                     name="description"
                     placeholder="Enter trail description..."
                     className="input-text mb-4"
+                    required
                 />
             </Form.Group>
             <Form.Group className="mb-4" controlId="formGridDescription">
@@ -158,6 +166,7 @@ function NewTrailForm( setTrails, trails ) {
                     name="features"
                     placeholder="Enter trail features..."
                     className="input-text"
+                    required
                 />
             </Form.Group>
             <Form.Group className="mb-4" controlId="formGridImage">
@@ -168,6 +177,7 @@ function NewTrailForm( setTrails, trails ) {
                     name="image"
                     placeholder="Enter trail image link..."
                     className="input-text"
+                    required
                 />
             </Form.Group>
             <Form.Group className="mb-4" controlId="formGridMap">
@@ -179,6 +189,7 @@ function NewTrailForm( setTrails, trails ) {
                     name="mapPDF"
                     placeholder="Enter a .pdf map..."
                     className="input-text"
+                    required
                 />
             </Form.Group>
             <Row>

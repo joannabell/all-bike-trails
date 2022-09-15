@@ -42,7 +42,7 @@
   }
 
   .search-bar h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(242, 247, 240);
     text-align: center;
     font-weight: 800;
     font-size: 48px;
@@ -123,6 +123,11 @@
     cursor: pointer;
   }
 
-
+  .content {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
 
 

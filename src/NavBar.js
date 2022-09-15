@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from "react-bootstrap/Button"
@@ -20,25 +19,21 @@ function NavBar({validateUser, currentUser}) {
   const handleCloseSignup = () => setShowSignup(false);
   const handleShowSignup = () => setShowSignup(true);
   
+  //<img style={{ width: "15%", height: "15%" }} src="/all-bike-trails-logo.png" alt="logo" />
 
   return (
     <>
-    <div className="NavBar">
-      <Navbar bg="light" variant="light">
-        <Container>
-          <Nav className=''>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/new-trail">Add Trail</Nav.Link>
-          </Nav>
-            
-          <Nav>
-            <img src="./assets/all-bike-trails-logo.jpeg"/>
-            <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
-            <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
-          </Nav>
-        
-        </Container>
-      </Navbar>
+    <div className="navbar navbar-dark bg-dark">
+      <Navbar >
+          <Nav >
+            <img style={{ width: "10%", height: "10%" }} src="/all-bike-trails-logo.png" alt="logo" />
+            <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" href="/" >HOME</Button>
+            <Button className="px-4 btn-secondary btn-sm rounded-pill" href="/new-trail">ADD NEW TRAIL</Button>
+           </Nav>
+
+          <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill" onClick={handleShowSignup}>SIGN UP</     Button>
+          <Button className="px-4 btn-secondary btn-sm rounded-pill" onClick={handleShowLogin}>LOGIN</Button>
+        </Navbar>
     </div>
     <div className='login-modal'>
       {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} validateUser={validateUser}/> : ""}

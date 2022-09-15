@@ -72,7 +72,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
 
   return (
     <div className="details-page">
-      <Breadcrumb className='pt-3'>
+      <Breadcrumb id="breadcrumb" className='pt-3'>
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item onClick={() => history.goBack()}>
         Search

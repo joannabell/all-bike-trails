@@ -17,12 +17,8 @@ function NavBar({validateUser, currentUser}) {
 
   return (
     <>
-    <div className="navbar navbar-dark bg-dark">
-      <div class="center">
-        </div>
-    </div>
-
-    <header className="navbar hidden-sm-down">
+  
+    <header className="navbar">
       <div className="container">
   
         <div class="left">

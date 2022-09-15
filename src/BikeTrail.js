@@ -56,21 +56,21 @@ function BikeTrail({ trail, trails, handleDelete, handleComments }) {
 
   return (
     <div className="details-page">
-      <Breadcrumb>
+      <Breadcrumb className='pt-3'>
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item onClick={() => history.goBack()}>
         Search
       </Breadcrumb.Item>
-      <Breadcrumb.Item active>Details</Breadcrumb.Item>
+      <Breadcrumb.Item active>{trail.name}</Breadcrumb.Item>
     </Breadcrumb> 
       
       <header style={{backgroundImage:`url(${trail.image})`, height: "500px"}}>
       </header>
-      <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "20px", height: "65px"}}>
+      <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "16px", height: "60px", fontWeight: 300}}>
         
-        <p style={{color: "white"}}>{trail.difficulty}</p>
-        <p style={{color: "white"}}>{trail.lengthMiles} miles</p>
-        <p style={{color: "white"}}>{trail.isHilly ? "Turraine: hilly" : "Turraine: flat"}</p>
+        <p style={{color: "white"}}>Difficulty : {trail.difficulty}</p>
+        <p style={{color: "white"}}>Length : {trail.lengthMiles} miles</p>
+        <p style={{color: "white"}}>{trail.isHilly ? "Turraine : Hilly" : "Turraine : Flat"}</p>
         </div>
       <h1 style={{marginTop: "20px"}}className='details-title'>{trail.name}</h1>
       <p style={{textAlign: "center", fontSize: "20px", color: "gray"}}>{trail.state}</p>
@@ -81,7 +81,7 @@ function BikeTrail({ trail, trails, handleDelete, handleComments }) {
         <p>{trail.description}</p>
         <h2>Features:</h2>
         <p>{trail.features}</p>
-        <iframe src={trail.mapPDF} />
+        <iframe src={trail.mapPDF}/>
         <h2>Comments:</h2>
         {trail.comments.map((comment, index) => <p key={index}>{comment}</p>)}
         <form onSubmit={handleSubmit}>

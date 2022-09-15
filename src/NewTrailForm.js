@@ -52,8 +52,8 @@ function NewTrailForm( setTrails, trails ) {
     }
 
     return (
-    <div className="newTrail-form">
-        <Form id="NewTrailForm" onSubmit={handleSubmit} >
+    <div className="new-trail-container">
+        <Form id="new-trail-form" onSubmit={handleSubmit} >
         <h2>Submit a New Trail</h2>
             <Form.Group className="mb-3" controlId="formGridName">
                 <Form.Control 
@@ -198,7 +198,7 @@ function NewTrailForm( setTrails, trails ) {
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" id="formGridSubit">
-                    <Button style={{float: "right"}} variant="primary" type="submit" className='btn-light'>
+                    <Button style={{float: "right"}} variant="primary" type="submit" className='btn-secondary'>
                         Submit
                     </Button>
                 </Form.Group>

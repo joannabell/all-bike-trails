@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Signup from './Signup';
 import Login from './Login';
 import Button from 'react-bootstrap/Button'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar({validateUser, currentUser}) {
   const [ showLogin, setShowLogin ] = useState(false);
@@ -29,7 +29,7 @@ function NavBar({validateUser, currentUser}) {
             </li>
   
             <li>
-            <NavLink exact to="/new-trail" style={{fontWeight: 'bold'}}>ADD NEW TRAIL</NavLink>
+            <NavLink exact to="/new-trail" style={{fontWeight: 'bold'}}>ADD TRAIL</NavLink>
             </li>
           </ul>
         </div>
@@ -39,13 +39,13 @@ function NavBar({validateUser, currentUser}) {
         </div>
 
         <div class="right">
-          <Button className="px-3 mx-2 btn-secondary btn-small rounded-pill" onClick={handleShowSignup} style={{fontSize: "14px"}}>Sign Up</Button>
+          <Button className="px-3 mx-2 btn-light btn-small rounded-pill" onClick={handleShowSignup} style={{fontSize: "14px"}}>Register</Button>
           <Button className="px-3 btn-secondary btn-small rounded-pill" onClick={handleShowLogin} style={{fontSize: "14px"}}>Log In</Button>
         </div>
       </div>
     
     </header>
-    <hr style={{borderBottom: "1px solid black"}}></hr>
+    {/* <hr style={{borderBottom: "1px solid black"}}></hr> */}
     <div className='login-modal'>
       {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} validateUser={validateUser}/> : ""}
     </div>

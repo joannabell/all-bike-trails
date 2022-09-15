@@ -27,12 +27,12 @@ function NavBar({validateUser, currentUser}) {
       <Navbar >
           <Nav >
             <img style={{ width: "10%", height: "10%" }} src="/all-bike-trails-logo.png" alt="logo" />
-            <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" href="/" >Home</Button>
-            <Button className="px-4 btn-secondary btn-sm rounded-pill" href="/new-trail">Add New Trail</Button>
+            <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" href="/" >HOME</Button>
+            <Button className="px-4 btn-secondary btn-sm rounded-pill" href="/new-trail">ADD NEW TRAIL</Button>
            </Nav>
 
-          <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" onClick={handleShowSignup}>Sign Up</     Button>
-          <Button className="px-4 btn-secondary btn-sm rounded-pill" onClick={handleShowLogin}>Login</Button>
+          <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill" onClick={handleShowSignup}>SIGN UP</     Button>
+          <Button className="px-4 btn-secondary btn-sm rounded-pill" onClick={handleShowLogin}>LOGIN</Button>
         </Navbar>
     </div>
     <div className='login-modal'>

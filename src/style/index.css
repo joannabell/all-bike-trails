@@ -241,7 +241,6 @@ details page */
   
   
   /* right */
-  
   .navbar .right a {
     margin-left: 16px;
     float: right;
@@ -258,4 +257,9 @@ details page */
   
   .navbar .left {
     order: -1;
+  }
+
+  .logo {
+    height:  50%;
+    width: 50%;
   }

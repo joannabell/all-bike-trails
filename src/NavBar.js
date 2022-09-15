@@ -18,7 +18,8 @@ function NavBar({validateUser, currentUser}) {
   return (
     <>
     <div className="navbar navbar-dark bg-dark">
-
+      <div class="center">
+        </div>
     </div>
 
     <header className="navbar hidden-sm-down">
@@ -27,24 +28,25 @@ function NavBar({validateUser, currentUser}) {
         <div class="left">
           <ul>
             <li class="active">
-              <NavLink exact to="/">Home</NavLink>
+              <NavLink exact to="/" style={{fontWeight: 'bold'}}>HOME</NavLink>
             </li>
   
             <li>
-            <NavLink exact to="/NewTrailForm">Add New Trail</NavLink>
+            <NavLink exact to="/new-trail" style={{fontWeight: 'bold'}}>ADD NEW TRAIL</NavLink>
             </li>
           </ul>
         </div>
-
-        <div class="center">
-          <h4 href="#">
-            <img src="https://i.pinimg.com/600x315/1a/7b/32/1a7b32ea3c2271e5448ea08b0d250d09.jpg" alt="logo" className="logo" />
-          </h4>
-        </div>
   
+        <div class="center">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEA3r4Io9tRcDoLZF1AD-i7EB3z9D-1_fs3g&usqp=CAU" alt="logo" />
+          <span class="logotext" style={{fontWeight: 'bold'}}>
+          All Bike Trails
+          </span>
+        </div>
+
         <div class="right">
-          <a class="btn btn-secondary" href="#" role="button">Sign Up</a>
-          <a class="btn btn-secondary" href="#" role="button">Login</a>
+          <a class="btn btn-secondary" href="#" role="button">sign up</a>
+          <a class="btn btn-secondary" href="#" role="button">login</a>
         </div>
   
       </div>

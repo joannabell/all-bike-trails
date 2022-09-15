@@ -383,4 +383,12 @@ details page */
   .rec-card span {
     color: darkgreen;
     font-weight: 600;
+    height: 30%;
+    width: 30%;
+  }
+
+  .logotext {
+      color: green;
+      font-weight: 800;
+      font-size: 26px;
   }

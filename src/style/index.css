@@ -270,6 +270,12 @@ details page */
   }
 
   .logo {
-    height:  50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
+  }
+
+  .logotext {
+      color: green;
+      font-weight: 800;
+      font-size: 26px;
   }

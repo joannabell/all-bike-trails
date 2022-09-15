@@ -148,10 +148,11 @@ details page */
 
 .details-page{
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
-
-.go-back{
-
+ 
+.details-page p {
+  font-weight: 300;
 }
 
 .details-page img{
@@ -163,16 +164,13 @@ details page */
 
 .details-title{
   text-align: center;
-  font-weight: 800;
-
+  font-weight: 500
 }
 
 .specs {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: 200;
-  font-family: 'Roboto', sans-serif;
 }
 
 .specs p {
@@ -180,7 +178,13 @@ details page */
 
 }
 
+.addComment{
+  width: 400px;
+}
 
+.comment-container {
+  margin-top: 50px;
+}
 
 
 

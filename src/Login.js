@@ -16,7 +16,8 @@ function Login({handleCloseLogin, showLogin, validateUser}){
     }
 
     return (
-        <Modal show={showLogin} onHide={handleCloseLogin}>
+        <div className="login">
+               <Modal show={showLogin} onHide={handleCloseLogin}>
         <Modal.Header closeButton>
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
@@ -36,6 +37,8 @@ function Login({handleCloseLogin, showLogin, validateUser}){
         </Form>
         </Modal.Body>
       </Modal>
+        </div>
+     
     )
 }
 

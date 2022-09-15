@@ -76,7 +76,7 @@ function App() {
 
   const searchedTrails = trails.filter((trail) => {
     if(searchQuery.length > 0){
-      return trail.name.toLowerCase().includes(searchQuery.toLowerCase())
+      return trail.name.toLowerCase().includes(searchQuery.toLowerCase()) || trail.state.toLowerCase().includes(searchQuery.toLowerCase())
     }
   })
 

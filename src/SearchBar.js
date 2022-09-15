@@ -19,7 +19,7 @@ function SearchBar({searchValue, handleSearchChange, updateSearchQuery}) {
         <h1>Find a trail near you</h1>
         <input
         type="text"
-        placeholder="Search by trail name or keyword" 
+        placeholder="Search by trail name or state" 
         className='search-input'
         value={searchValue}
         onChange={handleSearchChange}

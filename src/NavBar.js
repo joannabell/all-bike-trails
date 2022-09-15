@@ -23,18 +23,18 @@ function NavBar({validateUser, currentUser}) {
 
   return (
     <>
-    <div className="NavBar">
-      <Navbar bg="light" variant="light">
+    <div className="navbar navbar-dark bg-dark">
+      <Navbar >
         <Container>
           <Nav className=''>
             <img style={{ width: "20%", height: "20%" }} src="/all-bike-trails-logo.png" alt="logo" />
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/new-trail">Add Trail</Nav.Link>
+            <Nav.Link href="/" >HOME</Nav.Link>
+            <Nav.Link href="/new-trail">ADD NEW TRAIL</Nav.Link>
           </Nav>
             
           <Nav>
-            <Button className="px-3 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign up</Button>
-            <Button className="px-3 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
+            <Button className="px-4 mx-2 btn-secondary btn-sm rounded-pill"onClick={handleShowSignup}>Sign Up</Button>
+            <Button className="px-4 btn-secondary btn-sm rounded-pill"onClick={handleShowLogin}>Login</Button>
           </Nav>
         
         </Container>

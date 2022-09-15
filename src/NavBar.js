@@ -45,7 +45,7 @@ function NavBar({validateUser, currentUser}) {
       </div>
     
     </header>
-    <hr style={{borderBottom: "1px solid black"}}></hr>
+    {/* <hr style={{borderBottom: "1px solid black"}}></hr> */}
     <div className='login-modal'>
       {showLogin ? <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} validateUser={validateUser}/> : ""}
     </div>

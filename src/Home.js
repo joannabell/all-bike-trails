@@ -9,7 +9,7 @@ import Recommendations from './Recommendations';
 function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery, validateUser}) {
   let exampleTrails = []
 
-  exampleTrails = trails.slice(0, 3)
+  exampleTrails = trails.slice(0, 4)
   
   return (
 
@@ -33,7 +33,7 @@ function Home({ handleCardClick, trails, searchValue, handleSearchChange, update
         </div>
       </div>
       <div className='examples-box'>
-      <h3>Recommendations for you</h3>
+      <h3 className='rec-title'>Recommendations for you</h3>
       <div id="examples">
         {exampleTrails.map(trail => <div className='example-cards'> <Recommendations handleCardClick={handleCardClick} trail={trail}/></div>)}
       </div>

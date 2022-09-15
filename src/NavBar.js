@@ -42,8 +42,8 @@ function NavBar({validateUser, currentUser}) {
         </div>
 
         <div class="right">
-          <a class="btn btn-secondary" href="#" role="button">sign up</a>
-          <a class="btn btn-secondary" href="#" role="button">login</a>
+          <a class="btn btn-secondary" href="#" role="button">Sign Up</a>
+          <a class="btn btn-secondary" href="#" role="button">Log In</a>
         </div>
   
       </div>

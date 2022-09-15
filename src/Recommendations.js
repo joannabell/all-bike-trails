@@ -1,7 +1,7 @@
-function Recommendations({trail}){
+function Recommendations({trail, handleCardClick}){
     return (
         <div className="rec-card">
-            <img src={trail.image} />
+            <img src={trail.image} onClick={() => handleCardClick(trail.id)}/>
             <h3>{trail.name.length > 36 ? `${trail.name.slice(0,36)}...` : trail.name}</h3>
             <p id='trail-state'>{trail.state}</p>
             <p id="trail-difficulty"> Difficulty: <span>{trail.difficulty}</span> • Length: {trail.lengthMiles} miles</p>

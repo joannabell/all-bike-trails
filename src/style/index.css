@@ -26,7 +26,7 @@
 
   .SearchBar {
     position: relative; 
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -279,65 +279,8 @@ details page */
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .examples-box{
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(236, 236, 236);
 }
 
 
@@ -351,11 +294,24 @@ details page */
 	overflow-y: scroll;
 	height: 400px;
 	scrollbar-width: thin;
-	scrollbar-color: #8e8b86 transparent;
+	scrollbar-color: #898681 transparent;
+}
+
+.rec-title{
+  padding-top: 20px;
+  margin-left: 50px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #343434;
 }
 
   .rec-card {
+    padding-top: 20px;
     width: 300px;
+  }
+
+  .rec-card img {
+    border-radius: 20px;
   }
 
   .rec-card img:hover{
@@ -386,6 +342,7 @@ details page */
     height: 30%;
     width: 30%;
   }
+
 
   .logotext {
       color: green;

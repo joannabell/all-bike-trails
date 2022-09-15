@@ -3,9 +3,6 @@ import NavBar from './NavBar'
 import SearchBar from './SearchBar'
 import Recommendations from './Recommendations';
 
-
-
-
 function Home({ handleCardClick, trails, searchValue, handleSearchChange, updateSearchQuery, validateUser}) {
   let exampleTrails = []
 

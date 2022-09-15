@@ -48,6 +48,10 @@ function App() {
     setSearchValue(event.target.value)
   }
 
+  function addTrails(newTrail){
+    setTrails([...trails, newTrail])
+  }
+
   function updateSearchQuery(newSearch){
     setSearchQuery(newSearch)
 }
@@ -103,7 +107,7 @@ function App() {
           />
         </Route >
         <Route exact path="/new-trail">
-          <NewTrailForm trails={trails} setTrails={setTrails}/>
+          <NewTrailForm addTrails={addTrails} />
         </Route >
         <Route exact path="/trail/:id">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />

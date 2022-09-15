@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useHistory } from 'react-router-dom';
 
-function NewTrailForm( setTrails, trails ) { 
+function NewTrailForm({ addTrails }) { 
     const history = useHistory()
     const [formData, setFormData] = useState({
         id: Date.now(),
@@ -45,7 +45,7 @@ function NewTrailForm( setTrails, trails ) {
                 body: JSON.stringify(formData)
             })
             .then(res => res.json())
-            .then(newTrail => setTrails([...trails, newTrail]))
+            .then(newTrail => addTrails(newTrail))
             history.push("/")
             alert("New Trail Successfully Added!")
         }
@@ -194,7 +194,7 @@ function NewTrailForm( setTrails, trails ) {
             </Form.Group>
             <Row>
                 <Form.Group as={Col} className="mb-4" id="formGridCheckbox">
-                    <Form.Check onChange={handleChange} value={formData.isHilly} type="checkbox" label="Is the trail hilly?" />
+                    <Form.Check name="isHilly" onChange={handleChange} value={formData.isHilly} type="checkbox" label="Is the trail hilly?" />
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" id="formGridSubit">

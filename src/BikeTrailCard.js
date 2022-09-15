@@ -19,8 +19,7 @@ function BikeTrailCard({ trail, handleCardClick }) {
         <Card.Text className="mb-1 text-truncate">
          {trail.description}
         </Card.Text>
-       
-        <Card.Text className='text-success  align-text-bottom'>{trail.difficulty}   <span className='text-dark'>• {trail.lengthMiles} miles</span></Card.Text>
+        <Card.Text className='text-success  align-text-bottom'>{trail.difficulty} <span className='text-dark'>• {trail.lengthMiles} miles</span></Card.Text>
         <Card.Text className='mb-0'>{trail.comments.length} comments</Card.Text>
       </Card.Body>
     </Card>

@@ -277,3 +277,110 @@ details page */
     height:  50%;
     width: 50%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.examples-box{
+  background-color: rgb(237, 237, 237);
+}
+
+
+#examples{
+	display: flex;
+	overflow-x: auto;
+	padding: 0;
+	margin: 0 50px;
+	padding-bottom: 50px;
+
+	overflow-y: scroll;
+	height: 400px;
+	scrollbar-width: thin;
+	scrollbar-color: #8e8b86 transparent;
+}
+
+  .rec-card {
+    width: 300px;
+  }
+
+  .rec-card img:hover{
+    background-color: red;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .rec-card p {
+    padding: 0px;
+    margin-bottom: 2px;
+    color: #707070;
+    font-size: 14px;
+  }
+
+  .rec-card h3 {
+    padding-top: 10px;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+
+  .rec-card span {
+    color: darkgreen;
+    font-weight: 600;
+  }

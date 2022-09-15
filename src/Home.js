@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar'
 import SearchBar from './SearchBar'
-import BikeTrailCard from './BikeTrailCard';
+import Recommendations from './Recommendations';
 
 
 
@@ -35,7 +35,7 @@ function Home({ handleCardClick, trails, searchValue, handleSearchChange, update
       <div className='examples-box'>
       <h3>Recommendations for you</h3>
       <div id="examples">
-        {exampleTrails.map(trail => <div className='example-cards'> <BikeTrailCard handleCardClick={handleCardClick} trail={trail}/></div>)}-serv
+        {exampleTrails.map(trail => <div className='example-cards'> <Recommendations handleCardClick={handleCardClick} trail={trail}/></div>)}
       </div>
       </div>
     </div>

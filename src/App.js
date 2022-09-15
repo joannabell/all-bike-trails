@@ -103,7 +103,7 @@ function App() {
           />
         </Route >
         <Route exact path="/new-trail">
-          <NewTrailForm />
+          <NewTrailForm trails={trails} setTrails={setTrails}/>
         </Route >
         <Route exact path="/trail/:id">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />

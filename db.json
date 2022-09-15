@@ -15,7 +15,8 @@
         "Wow my favorite ride in the area!",
         "It's nice that it goes along the bay",
         "Super fun!",
-        "Favorite Saturday Activity"
+        "Favorite Saturday Activity",
+        "Watch out for other bikers!"
       ]
     },
     {
@@ -98,6 +99,19 @@
       "features": "As the path follows the former rail corridor, it is mostly flat but has a gradual downhill slope heading from west to east. The greatest elevation change is on the Trestle Trail segment. For more than half its length, the path runs parallel to the Pawtuxet River. Small boat access is possible at several points with formal canoe launches. The trail also features an equestrian trail now open from Route 117 at Old Main Street to Log Bridge Road. The equestrian path sometimes shares the bikeway, sometimes goes off path both north and south of the bikeway.",
       "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/Washington_Secondary_Bike_Path.pdf",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG/1280px-Washington_Secondary_Trail_truss_bridge_over_South_Branch%2C_Pawtuxet_River%2C_Coventry%2C_Rhode_Island.JPG",
+      "comments": []
+    },
+    {
+      "id": 1663273005572,
+      "name": "Super Fun Bike Trail",
+      "state": "Rhode Island",
+      "lengthMiles": "12",
+      "difficulty": "hard",
+      "isHilly": false,
+      "description": "The best bike trail in the state! So fun!",
+      "features": "Fun bike trail features!",
+      "mapPDF": "https://www.dot.ri.gov/travel/bikeri/docs/maps/BIKEFRONT.pdf",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg/1280px-Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg",
       "comments": []
     }
   ],

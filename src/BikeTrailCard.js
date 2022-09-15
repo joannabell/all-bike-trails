@@ -29,7 +29,7 @@ function BikeTrailCard({ trail, handleCardClick }) {
         <h3>{trail.name}</h3>  
          <p id='trail-state' style={{textDecoration: "underline"}}>{trail.state}</p>
         <p id="trail-difficulty"> Difficulty: <span>{trail.difficulty}</span> • Length: {trail.lengthMiles} miles</p>
-        <p>{trail.description}</p>
+        <p>{trail.description.slice(0,200)}...</p>
         <p>{trail.comments.length} comments</p>
         </div>
     </div>

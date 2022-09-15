@@ -59,6 +59,10 @@
     box-shadow: .5px .5px 5px .5px;
   }
 
+  .search-input:focus{
+    outline: none;
+  }
+
   .search-submit{
     width: 3.5rem;
     height: 2.8rem;
@@ -376,4 +380,9 @@ details page */
 
   .search-cards p {
     font-size: 14px;
+  }
+
+  .search-cards span {
+    color: darkgreen;
+    font-weight: 600;
   }

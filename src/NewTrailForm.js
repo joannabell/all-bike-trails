@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useHistory } from 'react-router-dom';
 
-function NewTrailForm( setTrails, trails ) { 
+function NewTrailForm({ addTrails }) { 
     const history = useHistory()
     const [formData, setFormData] = useState({
         id: Date.now(),
@@ -36,7 +36,7 @@ function NewTrailForm( setTrails, trails ) {
         if(formData.state === "State" || formData.state === "") return alert("Please select a State!")
         if(!(formData.mapPDF.toLowerCase().includes(".pdf".toLowerCase()))) return alert("Please enter a valid .pdf map!")
         else {
-            fetch("http://localhost:3000/bikeTrails", {
+            fetch("https://radiant-sands-06167.herokuapp.com/bikeTrails", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function NewTrailForm( setTrails, trails ) {
                 body: JSON.stringify(formData)
             })
             .then(res => res.json())
-            .then(newTrail => setTrails([...trails, newTrail]))
+            .then(newTrail => addTrails(newTrail))
             history.push("/")
             alert("New Trail Successfully Added!")
         }
@@ -194,7 +194,7 @@ function NewTrailForm( setTrails, trails ) {
             </Form.Group>
             <Row>
                 <Form.Group as={Col} className="mb-4" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Is the trail hilly?" />
+                    <Form.Check name="isHilly" onChange={handleChange} value={formData.isHilly} type="checkbox" label="Is the trail hilly?" />
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" id="formGridSubit">

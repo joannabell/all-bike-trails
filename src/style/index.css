@@ -389,3 +389,7 @@ details page */
     color: darkgreen;
     font-weight: 600;
   }
+
+  #difficultyFilter {
+    width: 30%
+  }

@@ -14,7 +14,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
   const [ comment, setComment ] = useState("")
 
   useEffect(() => {
-    fetch(`http://localhost:3000/bikeTrails/${id}`)
+    fetch(`https://radiant-sands-06167.herokuapp.com/bikeTrails/${id}`)
     .then(res => res.json())
     .then(bikeTrails => {
     setTrail(bikeTrails)
@@ -25,7 +25,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
 
 
   function deleteTrail() {
-    fetch(`http://localhost:3000/bikeTrails/${id}`, {
+    fetch(`https://radiant-sands-06167.herokuapp.com/bikeTrails/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
     e.preventDefault()
     const newComments = [...trail.comments, comment]
     const updatedTrail = {...trail, comments: newComments}
-    fetch(`http://localhost:3000/bikeTrails/${id}`, {
+    fetch(`https://radiant-sands-06167.herokuapp.com/bikeTrails/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

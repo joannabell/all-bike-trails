@@ -21,14 +21,14 @@ function App() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/bikeTrails")
+    fetch("https://radiant-sands-06167.herokuapp.com/bikeTrails")
     .then(res => res.json())
     .then(bikeTrails => {
       setTrails(bikeTrails)
       setCurrentTrail(bikeTrails[0])
     })
 
-    fetch("http://localhost:3000/users")
+    fetch("https://radiant-sands-06167.herokuapp.com/users")
     .then(res => res.json())
     .then(users => {
       setUsers(users)
@@ -46,6 +46,10 @@ function App() {
   
   function handleSearchChange(event) {
     setSearchValue(event.target.value)
+  }
+
+  function addTrails(newTrail){
+    setTrails([...trails, newTrail])
   }
 
   function updateSearchQuery(newSearch){
@@ -103,7 +107,7 @@ function App() {
           />
         </Route >
         <Route exact path="/new-trail">
-          <NewTrailForm trails={trails} setTrails={setTrails}/>
+          <NewTrailForm addTrails={addTrails} />
         </Route >
         <Route exact path="/trail/:id">
           <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />

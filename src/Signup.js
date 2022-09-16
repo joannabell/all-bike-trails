@@ -42,7 +42,7 @@ function Signup({handleCloseSignup, showSignup}) {
     return (
         <Modal show={showSignup} onHide={handleCloseSignup}>
         <Modal.Header closeButton>
-          <Modal.Title>Register to Recieve Updates!</Modal.Title>
+          <Modal.Title>Register to recieve updates!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <Form onSubmit={handleSubmitForm} >
@@ -59,7 +59,7 @@ function Signup({handleCloseSignup, showSignup}) {
                     <Form.Control type="password" placeholder="Password" name="password" value={signUpData.password} onChange={handleFormChange} required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Button variant="primary" type="submit" >
+                    <Button variant="dark" type="submit" >
                         Sign up
                     </Button>
                 </Form.Group>

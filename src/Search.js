@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./NavBar";
 import BikeTrailCard from "./BikeTrailCard";
 import SearchBar from "./SearchBar"
+import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -37,20 +38,33 @@ function Search ({trails, searchValue, handleSearchChange, searchQuery, updateSe
             handleSearchChange={handleSearchChange} 
             updateSearchQuery={updateSearchQuery}
             />
+            <div className="search-results">
+            <div className="search-filters">
+         
+            <Container className="d-flex align-items-start">
             <Row>
-            <Form.Group as={Col} id="difficultyFilter" controlId="formDifficulty">
-                <Form.Select value={diffFilter} onChange={handleDifficulty} name="difficulty" defaultValue="Choose a Difficulty">
-                    <option style={{color: '#00A300'}} value="">Filter by Difficulty Level...</option>
+            <Col>
+            <Form.Group as={Col}  controlId="formDifficulty" className="mb-3 my-1">
+                <Form.Select id="difficultyFilter" value={diffFilter} onChange={handleDifficulty} name="difficulty" defaultValue="Choose a Difficulty">
+                    <option style={{color: '#00A300'}} value="">Difficulty Level...</option>
                     <option style={{color: '#00A300'}} value="easy">Easy</option>
                     <option style={{color: '#FFFF00'}} value="medium">Medium</option>
                     <option style={{color: '#E32227'}} value="hard">Hard</option>
                 </Form.Select>
+            </Form.Group >
+            </Col>
+            <Col>
+            <Form.Group as={Col}  id="searchCheckbox" className="mb-3 my-1" >
+                <Form.Check onChange={handleTerrain} type="checkbox" name="terrain" label="Flat terrain"/>
             </Form.Group>
-            <Form.Group as={Col} className="mb-4" id="searchCheckbox">
-                    <Form.Check style={{"font-size": "15pt"}} onChange={handleTerrain} type="checkbox" label="Filter out Hilly Trails?" />
-            </Form.Group>
+            </Col>
             </Row>
+            </Container>
+          
+            </div>
+            <hr></hr>
             <p style={{margin: "20px"}}>{searchQuery.length === 0? "" : `Showing results for ${searchQuery}...` }</p>
+            </div>
             <div className="trails-container">
                 {showTrails}
             </div>

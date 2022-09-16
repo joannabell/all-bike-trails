@@ -12,7 +12,10 @@ function Home({ handleCardClick, trails, searchValue, handleSearchChange, update
 
     <div className="Home">
       <div id="searchDiv">
-        <SearchBar handleSearchChange={handleSearchChange} searchValue={searchValue} updateSearchQuery={updateSearchQuery}/>
+        <SearchBar 
+        handleSearchChange={handleSearchChange} 
+        searchValue={searchValue} 
+        updateSearchQuery={updateSearchQuery}/>
       </div>
       <div>
         <div className='about-section'>

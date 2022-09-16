@@ -28,7 +28,7 @@
     position: relative; 
     height: 500px;
     width: 100%;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     background: url("../assets/pexels-pixabay-258045.jpeg") no-repeat;
@@ -73,7 +73,6 @@
   }
 
   .about-section {
-    padding-top: 50px;
     width: 100%;
     padding: auto;
     display: flex;
@@ -146,6 +145,8 @@
     align-items: center; 
     width: 600px; 
     padding: 50px 80px;
+    box-shadow: .5px .5px 2px 1px;
+    border-radius: 10px;
   }
 
   #new-trail-form h2 {
@@ -288,9 +289,18 @@ details page */
     width: 50%;
   }
 
+.breadcrumb{
+  background-color: #d4d4d4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-bottom: 0px
+}
+
 
 .examples-box{
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(229, 229, 229);
 }
 
 
@@ -390,6 +400,14 @@ details page */
     font-weight: 600;
   }
 
-  #difficultyFilter {
-    width: 30%
+  #difficultyFilter{
+    width: 200px;
+  }
+
+  .search-filters {
+    margin-top: -10px;
+  }
+
+  .footer {
+    height: 100px;
   }

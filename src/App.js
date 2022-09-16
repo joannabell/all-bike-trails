@@ -110,9 +110,16 @@ function App() {
           <NewTrailForm addTrails={addTrails} />
         </Route >
         <Route exact path="/trail/:id">
-          <BikeTrail handleComments={handleComments} handleDelete={handleDelete} trails={trails} trail={currentTrail} />
+          <BikeTrail 
+          handleComments={handleComments} 
+          handleDelete={handleDelete} 
+          trails={trails} 
+          trail={currentTrail} />
         </Route >
       </Switch>
+      <footer className='footer'>
+
+      </footer>
     </div>
   );
 }

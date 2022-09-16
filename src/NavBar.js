@@ -39,8 +39,8 @@ function NavBar({validateUser, currentUser}) {
         </div>
 
         <div class="right">
-          <Button className="px-3 mx-2 btn-light btn-small rounded-pill" onClick={handleShowSignup} style={{fontSize: "14px"}}>Register</Button>
-          <Button className="px-3 btn-secondary btn-small rounded-pill" onClick={handleShowLogin} style={{fontSize: "14px"}}>Log In</Button>
+          <Button className="px-3 ml-5 btn-light btn-small rounded-pill" onClick={handleShowSignup} style={{fontSize: "14px"}}>Register</Button>
+          <Button className="px-3 ml-2 btn-secondary btn-small rounded-pill" onClick={handleShowLogin} style={{fontSize: "14px"}}>Sign in</Button>
         </div>
       </div>
     

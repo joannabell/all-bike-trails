@@ -19,7 +19,7 @@ function Login({handleCloseLogin, showLogin, validateUser}){
         <div className="login">
                <Modal show={showLogin} onHide={handleCloseLogin}>
         <Modal.Header closeButton>
-          <Modal.Title>Log in</Modal.Title>
+          <Modal.Title>Sign in to your account</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <Form onSubmit={handleFormSubmit}>
@@ -30,8 +30,8 @@ function Login({handleCloseLogin, showLogin, validateUser}){
                 <Form.Control type="password" placeholder="Password" name="password" value={loginData.password} onChange={handleFormChange}/>
             </Form.Group>
             <Form.Group className="mb-3">
-                <Button variant="primary" type="submit">
-                    Log in
+                <Button variant="dark" type="submit">
+                    Sign in
                 </Button>
             </Form.Group>
         </Form>

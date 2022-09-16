@@ -72,29 +72,33 @@ function BikeTrail({ trails, handleDelete, handleComments }) {
 
   return (
     <div className="details-page">
-      <Breadcrumb id="breadcrumb" className='pt-3'>
+      <Breadcrumb id="breadcrumb" className=''>
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item onClick={() => history.goBack()}>
         Search
       </Breadcrumb.Item>
       <Breadcrumb.Item active>{trail.name}</Breadcrumb.Item>
     </Breadcrumb> 
+
+    <header style={{backgroundImage:`url(${trail.image})`, height: "500px"}}>
+    </header>
+
+    <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "16px", height: "60px", fontWeight: 300}}>
+      <p style={{color: "white"}}>Difficulty : {trail.difficulty}</p>
+      <p style={{color: "white"}}>Length : {trail.lengthMiles} miles</p>
+      <p style={{color: "white"}}>{trail.isHilly ? "Terrain : Hilly" : "Terrain : Flat"}</p>
+    </div>
+
+    <h1 style={{marginTop: "20px"}}className='details-title'>{trail.name}</h1>
+    <p style={{textAlign: "center", fontSize: "20px", color: "gray"}}>{trail.state}</p>
+
+    <div className="trail-info" style={{margin:"0 60px"}}>
+      <h3>Description</h3>
+      <p>{trail.description}</p>
+      <h3>Features</h3>
+      <p>{trail.features}</p>
+      <iframe src={trail.mapPDF} style={{height:"250px", border: "2px black solid", width: "200px"}}/>
       
-      <header style={{backgroundImage:`url(${trail.image})`, height: "500px"}}>
-      </header>
-      <div className='specs' style={{backgroundColor: "darkgreen", fontSize: "16px", height: "60px", fontWeight: 300}}>
-        <p style={{color: "white"}}>Difficulty : {trail.difficulty}</p>
-        <p style={{color: "white"}}>Length : {trail.lengthMiles} miles</p>
-        <p style={{color: "white"}}>{trail.isHilly ? "Terrain : Hilly" : "Terrain : Flat"}</p>
-      </div>
-      <h1 style={{marginTop: "20px"}}className='details-title'>{trail.name}</h1>
-      <p style={{textAlign: "center", fontSize: "20px", color: "gray"}}>{trail.state}</p>
-      <div className="trail-info" style={{margin:"0 60px"}}>
-        <h3>Description</h3>
-        <p>{trail.description}</p>
-        <h3>Features</h3>
-        <p>{trail.features}</p>
-        <iframe src={trail.mapPDF} style={{height:"250px", border: "2px black solid", width: "200px"}}/>
       <div className='comment-container'>
         <h2 style={{paddingBottom: "20px"}}>Comments</h2>
         <div className='add-comment'>
